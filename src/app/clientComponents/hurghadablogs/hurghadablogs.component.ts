@@ -15,19 +15,19 @@ export class HurghadablogsComponent {
 
   ngOnInit() {
     this.title.setTitle(
-      'Hurghada Travel Blog | Things to Do & Travel Tips – Top Picks Travels'
+      'Hurghada Travel Blog | Things to Do & Travel Tips – Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures'
     );
   
     this.meta.updateTag({
       name: 'description',
       content:
-        'Discover the best travel tips, activities, and attractions in Hurghada. Explore beaches, desert safaris, snorkeling spots, and local experiences with Top Picks Travels travel blog.'
+        'Discover the best travel tips, activities, and attractions in Hurghada. Explore beaches, desert safaris, snorkeling spots, and local experiences with Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures travel blog.'
     });
   
     this.meta.updateTag({
       name: 'keywords',
       content:
-        'Hurghada travel blog, things to do in Hurghada, Hurghada travel guide, Red Sea activities, snorkeling Hurghada, Top Picks Travels blog'
+        'Hurghada travel blog, things to do in Hurghada, Hurghada travel guide, Red Sea activities, snorkeling Hurghada, Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures blog'
     });
   }
 }

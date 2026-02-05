@@ -15,19 +15,19 @@ export class ReviewsComponent {
 
    ngOnInit() {
     this.title.setTitle(
-      'Customer Reviews & Testimonials | Top Picks Travels Hurghada'
+      'Customer Reviews & Testimonials | Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures Hurghada'
     );
   
     this.meta.updateTag({
       name: 'description',
       content:
-        'Read real customer reviews about Top Picks Travels and discover why travelers trust us for tours, excursions, transfers, and unforgettable travel experiences in Hurghada and Egypt.'
+        'Read real customer reviews about Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures and discover why travelers trust us for tours, excursions, transfers, and unforgettable travel experiences in Hurghada and Egypt.'
     });
   
     this.meta.updateTag({
       name: 'keywords',
       content:
-        'Top Picks Travels reviews, Hurghada travel reviews, Egypt tour reviews, trusted travel agency Hurghada, travel testimonials Egypt'
+        'Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures reviews, Hurghada travel reviews, Egypt tour reviews, trusted travel agency Hurghada, travel testimonials Egypt'
     });
   }
 }

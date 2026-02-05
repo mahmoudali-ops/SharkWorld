@@ -36,13 +36,13 @@ export class BlogsComponent {
   
     ngOnInit() {
       this.title.setTitle(
-        'Travel Blog | Egypt & Hurghada Travel Tips – Top Picks Travels'
+        'Travel Blog | Egypt & Hurghada Travel Tips – Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures'
       );
     
       this.meta.updateTag({
         name: 'description',
         content:
-          'Explore Top Picks Travels blog for the best travel tips, destination guides, and things to do in Hurghada and across Egypt.'
+          'Explore Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures blog for the best travel tips, destination guides, and things to do in Hurghada and across Egypt.'
       });
     
       this.meta.updateTag({

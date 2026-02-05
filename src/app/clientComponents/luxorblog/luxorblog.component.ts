@@ -16,13 +16,13 @@ export class LuxorblogComponent {
 
   ngOnInit() {
     this.title.setTitle(
-      'Luxor Travel Blog | Ancient Temples & Day Trips – Top Picks Travels'
+      'Luxor Travel Blog | Ancient Temples & Day Trips – Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures'
     );
   
     this.meta.updateTag({
       name: 'description',
       content:
-        'Explore Luxor travel guides, ancient temples, and historical attractions. Learn about the Valley of the Kings, Karnak Temple, and unforgettable Luxor day trips with Top Picks Travels.'
+        'Explore Luxor travel guides, ancient temples, and historical attractions. Learn about the Valley of the Kings, Karnak Temple, and unforgettable Luxor day trips with Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures.'
     });
   
     this.meta.updateTag({

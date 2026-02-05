@@ -69,30 +69,29 @@ export class HomeComponent  extends ReloadableComponent {
   
     // 🔹 Title (Brand + Location + Service)
     this.title.setTitle(
-      'Top Picks Travels | Hurghada Tours, Excursions & Egypt Travel Experiences'
+      'Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures'
     );
   
     // 🔹 Meta Description (Conversion + SEO)
     this.meta.updateTag({
       name: 'description',
       content:
-        'Top Picks Travels is a trusted travel agency in Hurghada offering unforgettable tours, excursions, desert safaris, snorkeling trips, and private transfers across Egypt. Book your perfect holiday experience today.'
+        'Sharkworlds is your ultimate travel partner in Hurghada, offering thrilling tours, excursions, snorkeling adventures, desert safaris, and private transfers across Egypt. Plan your unforgettable holiday today!'
     });
   
     // 🔹 Keywords (Strong but not spammy)
     this.meta.updateTag({
       name: 'keywords',
       content:
-        'Hurghada tours, Egypt excursions, Red Sea activities, Hurghada travel agency, desert safari Hurghada, snorkeling trips Egypt, Egypt day tours, Top Picks Travels'
+        'Hurghada tours, Egypt excursions, Red Sea activities, Hurghada travel agency, desert safari Hurghada, snorkeling trips Egypt, Egypt day tours, Sharkworlds'
     });
   
     // 🔹 Open Graph (Social + SEO Boost)
-    this.meta.updateTag({ property: 'og:title', content: 'Top Picks Travels | Hurghada Tours & Egypt Excursions' });
-    this.meta.updateTag({ property: 'og:description', content: 'Book the best tours, excursions, and Red Sea activities in Hurghada with Top Picks Travels. Trusted local travel experts.' });
+    this.meta.updateTag({ property: 'og:title', content: 'Sharkworlds | Hurghada Tours & Egypt Excursions' });
+    this.meta.updateTag({ property: 'og:description', content: 'Book the best tours, excursions, and Red Sea adventures in Hurghada with Sharkworlds. Trusted local travel experts.' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: 'https://toppickstravels.com/' });
-    this.meta.updateTag({ property: 'og:image', content: 'https://toppickstravels.com/assets/images/toppicktravel-removebg-preview2.png' });
-   };
+};
+
    LoadData() {
     this.destnationservice.getAllDestnation()
       .pipe(takeUntil(this.destroy$))

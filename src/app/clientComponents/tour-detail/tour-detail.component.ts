@@ -67,7 +67,7 @@ export class TOurDetailComponent  extends ReloadableComponent  {
   
           // Fallback title (لو لسه الداتا مجتش)
           const formattedTitle = slug.replace(/-/g, ' ');
-          this.titleService.setTitle(`${formattedTitle} | Top Picks Travels`);
+          this.titleService.setTitle(`${formattedTitle} | Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures`);
   
           return this.TourService.getDetaildedTOur(slug);
         }),
@@ -83,7 +83,7 @@ export class TOurDetailComponent  extends ReloadableComponent  {
   
           // 🔹 Title
           this.titleService.setTitle(
-            `${res.titles} | ${res.destinationName} Tours | Top Picks Travels`
+            `${res.titles} | ${res.destinationName} Tours | Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures`
           );
   
           // 🔹 Clear old meta (important for SPA)
@@ -95,7 +95,7 @@ export class TOurDetailComponent  extends ReloadableComponent  {
             name: 'description',
             content:
               res.metaDescription ||
-              `Book ${res.titles} with Top Picks Travels. Enjoy unforgettable tours and excursions in ${res.destinationName}, Egypt.`
+              `Book ${res.titles} with Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures. Enjoy unforgettable tours and excursions in ${res.destinationName}, Egypt.`
           });
   
           // 🔹 Meta Keywords
@@ -103,13 +103,13 @@ export class TOurDetailComponent  extends ReloadableComponent  {
             name: 'keywords',
             content:
               res.metaKeyWords ||
-              `${res.titles}, ${res.destinationName} tours, Egypt excursions, Top Picks Travels`
+              `${res.titles}, ${res.destinationName} tours, Egypt excursions, Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures`
           });
   
           // 🔹 Open Graph (SEO + Social)
           this.metaService.updateTag({
             property: 'og:title',
-            content: `${res.titles} | Top Picks Travels`
+            content: `${res.titles} | Sharkworlds | Hurghada Tours, Excursions & Egypt Travel Adventures`
           });
   
           this.metaService.updateTag({
