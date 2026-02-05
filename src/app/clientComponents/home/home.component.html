@@ -1,0 +1,415 @@
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+    <!-- Indicators -->
+  
+    <section class="hero-section">
+
+      <!-- الفيديو -->
+      <video 
+        #heroVideo
+        class="hero-video" 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        webkit-playsinline
+        
+        preload="auto"
+        poster="../../../assets/images/imageposter.png"
+        [class.video-hidden]="videoFallback"
+      >
+        <source src="../../../assets/videos/doc_2026-02-02_00-54-46.mp4" type="video/mp4">
+        <!-- <sour ce src="assets/videos/videoss.webm" type="video/webm"> -->
+      </video>
+
+      @if (videoFallback) {
+        <div class="hero-fallback"></div>
+      }
+    
+      <!-- طبقة غامقة بسيطة لتحسين وضوح النص -->
+      <div class="overlay"></div>
+    
+      <!-- محتوى الهيرو -->
+      <div class="hero-content">
+        <h1 class="brand-name">Shark World</h1>
+        <p class="brand-subtitle">{{ 'HeroDiscription' | t }}</p>
+      </div>
+  
+    
+    </section>
+    
+    
+  
+   
+  <!-- الأقسا م الجديدة تحت الـ Carousel -->
+  <section class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+  
+        <!-- Image on the left -->
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <img src="../../../assets/images/diving4.webp" 
+               alt="About Us" 
+               class="img-fluid about-image">
+        </div>
+  
+        <!-- Text on the right -->
+        <div class="col-lg-7">
+          <h2 class="section-title mb-3">{{ 'ABOUT.TITLE' | t }}</h2>
+        
+          <p class="intro-text">
+            {{ 'ABOUT.INTRO' | t }}
+          </p>
+        
+          <p class="description-text">
+            {{ 'ABOUT.DESCRIPTION' | t }}
+          </p>
+        
+          <ul class="features-list mt-3">
+            <li>{{ 'ABOUT.FEATURES.CUSTOMERS' | t }}</li>
+            <li>{{ 'ABOUT.FEATURES.GUIDES' | t }}</li>
+            <li>{{ 'ABOUT.FEATURES.TRIPS' | t }}</li>
+          </ul>
+        
+          <button routerLink="/about" class="btn about-btn mt-3">
+            {{ 'ABOUT.BUTTON' | t }}
+          </button>
+        </div>
+        
+  
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+
+<!-- قسم الوجهات الشهيرة مع Swiper -->
+<section class="cube-swiper-section py-5">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Explore Our Tours</h2>
+      <p class="section-subtitle">
+        Swipe through our most popular destinations
+      </p>
+    </div>
+
+    <!-- Swiper Cube -->
+    <swiper-container class="cube-swiper"
+      effect="cube"
+      grab-cursor="true"
+      cube-effect-shadow="true"
+      cube-effect-slide-shadows="true"
+      cube-effect-shadow-offset="20"
+      cube-effect-shadow-scale="0.94"
+      pagination="true"
+      autoplay-delay="4000"
+      autoplay-disable-on-interaction="false"
+      speed="1200"
+      loop="true"
+    >
+      <swiper-slide *ngFor="let tour of  AllPopularHurghadaCat()">
+        <div class="slide-card">
+          <img [src]="tour.imageCover" [alt]="tour.titles" />
+          <div class="slide-overlay">
+            <h3>{{ tour.titles }}</h3>
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Hurghada</span>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+
+  </div>
+</section>
+
+<style>
+/* ===== Section ===== */
+.cube-swiper-section {
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+/* ===== Swiper Full Width ===== */
+.cube-swiper {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  margin: auto;
+}
+
+/* ===== Slide Card ===== */
+swiper-slide {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1); /* حركة سلسة */
+}
+
+.slide-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slide-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Overlay */
+.slide-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 25px;
+  background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);
+  color: #fff;
+}
+
+.slide-overlay h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.slide-overlay .location {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Pagination bullets */
+.cube-swiper .swiper-pagination-bullet {
+  background: #5a8de0;
+  opacity: 0.7;
+}
+
+.cube-swiper .swiper-pagination-bullet-active {
+  background: #3498db;
+  width: 20px;
+  border-radius: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .cube-swiper {
+    height: 450px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cube-swiper {
+    height: 400px;
+  }
+
+  .slide-overlay h3 {
+    font-size: 1.7rem;
+  }
+
+  .slide-overlay .location {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cube-swiper {
+    height: 350px;
+  }
+
+  .slide-overlay h3 {
+    font-size: 1.4rem;
+  }
+
+  .slide-overlay .location {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cube-swiper {
+    height: 300px;
+  }
+
+  .slide-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .slide-overlay .location {
+    font-size: 0.85rem;
+  }
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+
+
+
+
+
+
+
+
+  <!-- قسم الوجهات الشهيرة -->
+  <section class="destinations-section-new py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="destinations-title">Hurghada Most Popular Tours</h2>
+        <p class="destinations-subtitle">Discover the most beautiful places you can visit with TourSite</p>
+        
+      </div>
+  
+      <div class="row">
+        @for (tour of AllPopularToursList().slice(0,8); track tour.id){
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <a [routerLink]="['/tourDetail', tour.slug]" class="destination-card-new">
+              <div class="destination-image-new">
+                <img [src]="tour.imageCover" [alt]="tour.titles" class="img-fluid">
+                <div class="destination-overlay-new">
+                  <h4>{{tour.titles}}</h4>
+                  <p>{{tour.descriptions.slice(0,50)}}...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        }
+      </div>
+
+    </div>
+  </section>
+  
+
+
+  
+  <section class="why-us-section py-5">
+    <div class="container">
+  
+      <div class="text-center mb-5 fade-up">
+        <h2 class="why-title">{{ 'WhyChooseUsTitle' | t }}</h2>
+        <p class="why-subtitle">{{ 'WhyChooseUsSubtitle' | t }}</p>
+      </div>
+  
+      <div class="row g-4">
+  
+        <div class="col-lg-4 col-md-6">
+          <div class="why-card float-card delay-1">
+            <div class="why-icon">
+              <i class="fas fa-monument"></i>
+            </div>
+            <h3>{{ 'Service1Title' | t }}</h3>
+            <p>{{ 'Service1Description' | t }}</p>
+            <a href="/categrytourDetail/thing-to-do-hurghada" class="why-link">
+              {{ 'Service1Link' | t }} <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6">
+          <div class="why-card featured float-card delay-2">
+            <div class="why-icon">
+              <i class="fas fa-umbrella-beach"></i>
+            </div>
+            <h3>{{ 'Service2Title' | t }}</h3>
+            <p>{{ 'Service2Description' | t }}</p>
+            <a href="/categrytourDetail/thing-to-do-hurghada" class="why-link">
+              {{ 'Service2Link' | t }} <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6">
+          <div class="why-card float-card delay-3">
+            <div class="why-icon">
+              <i class="fas fa-hiking"></i>
+            </div>
+            <h3>{{ 'Service3Title' | t }}</h3>
+            <p>{{ 'Service3Description' | t }}</p>
+            <a href="/categrytourDetail/thing-to-do-hurghada" class="why-link">
+              {{ 'Service3Link' | t }} <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="experience-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+  
+        <!-- Image -->
+        <div class="col-lg-6">
+          <div class="experience-image reveal-left">
+            <img src="../../../assets/images/diving1 (2).webp" alt="SharkWorlds Experience">
+          </div>
+        </div>
+  
+        <!-- Content -->
+        <div class="col-lg-6">
+          <div class="experience-content reveal-right">
+            <span class="experience-badge"><strong>SharkWorlds Experience</strong></span>
+            <h2 class="experience-title">
+              Our Travelers' Smiles <br>
+              Show Their Satisfaction
+            </h2>
+            <p class="experience-desc">
+              At <strong>SharkWorlds</strong>, every journey is crafted to delight our guests. 
+              Travelers love our attentive service, unforgettable adventures, 
+              and the care we put into every detail to make their trip perfect.
+            </p>
+            
+  
+            <ul class="experience-list">
+              <li>
+                <i class="fas fa-star"></i> Exceptional service & friendly guides
+              </li>
+              <li>
+                <i class="fas fa-water"></i> Beautiful curated destinations
+              </li>
+              <li>
+                <i class="fas fa-smile-beam"></i> High customer satisfaction
+              </li>
+              <li>
+                <i class="fas fa-globe-americas"></i> Trusted by travelers worldwide
+              </li>
+            </ul>
+  
+            <a href="/about-us" class="experience-btn">
+              Discover Our Services <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <app-client-footer></app-client-footer>
+</div>
+  
+
+

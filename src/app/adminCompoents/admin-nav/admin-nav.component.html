@@ -1,0 +1,52 @@
+<header class="admin-topnav v2">
+  <!-- LEFT : PROFILE -->
+  <div class="nav-profile">
+    <img src="assets/images/admin3.jpg" alt="Admin" class="profile-avatar" />
+    <div class="profile-text">
+      <span class="welcome">Welcome back</span>
+      <strong class="username">Shark Admin</strong>
+    </div>
+  </div>
+
+  <!-- CENTER : NAVIGATION -->
+  <nav class="nav-center">
+    <a routerLink="/" routerLinkActive="active" class="nav-link">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a routerLink="tours" routerLinkActive="active" class="nav-link">
+      <i class="fas fa-suitcase-rolling"></i>
+      <span>Tours</span>
+    </a>
+
+    <a routerLink="categorytour" routerLinkActive="active" class="nav-link">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Categories</span>
+    </a>
+
+    <a routerLink="destnaions" routerLinkActive="active" class="nav-link">
+      <i class="fa-solid fa-earth-americas"></i>
+      <span>Destinations</span>
+    </a>
+
+
+    <a routerLink="emails" routerLinkActive="active" class="nav-link">
+      <i class="fas fa-calendar-check"></i>
+      <span>Bookings</span>
+    </a>
+
+    <a routerLink="users" routerLinkActive="active" class="nav-link">
+      <i class="fas fa-users"></i>
+      <span>Users</span>
+    </a>
+  </nav>
+
+  <!-- RIGHT : ACTIONS -->
+  <div class="nav-actions">
+    <span>LogOUt</span>
+    <button class="logout-btn" (click)="onLogout()">
+      <i class="fas fa-sign-out-alt"></i>
+    </button>
+  </div>
+</header>

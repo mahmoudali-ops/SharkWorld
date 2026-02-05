@@ -1,0 +1,638 @@
+/* ================= HERO SECTION ================= */
+.category-hero-enhanced {
+  position: relative;
+  height: 55vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 60px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+.category-hero-enhanced:hover .hero-image {
+  transform: scale(1.05);
+}
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.75));
+}
+
+.hero-text {
+  position: relative;
+  color: white;
+  z-index: 10;
+  max-width: 600px;
+}
+
+.hero-badge {
+  background: rgba(255,255,255,0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  opacity: .9;
+}
+
+/* ================= TOURS CARDS ================= */
+.tour-card-advanced {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: .3s ease;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+.tour-card-advanced:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.tour-image-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.tour-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s ease;
+}
+
+.tour-card-advanced:hover .tour-img {
+  transform: scale(1.1);
+}
+
+.floating-labels {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.f-label {
+  background: rgba(0,0,0,0.65);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.tour-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.tour-desc {
+  color: #555;
+  font-size: 0.9rem;
+  height: 48px;
+  overflow: hidden;
+}
+
+.tour-meta {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-tags .tag {
+  background: #f1f1f1;
+  padding: 4px 10px;
+  margin-right: 6px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.tour-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  border-top: 1px solid #eee;
+}
+
+.btn-details,
+.btn-book {
+  padding: 7px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.btn-details {
+  background: #e3f2fd;
+  border: none;
+}
+
+.btn-details:hover {
+  background: #bbdefb;
+}
+
+.btn-book {
+  background: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-book:hover {
+  background: #218838;
+}
+.hero-text {
+  position: absolute;
+  bottom: 40px;           /* النص يبقى فوق شوية */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+  width: 100%;
+  max-width: 700px;
+}
+/* SECTION الأساسي */
+.category-hero-section {
+  width: 100%;
+  margin-top: 200px; /* عشان تنزل شوية من تحت الـ navbar */
+}
+
+/* الصورة */
+.hero-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 22px;
+  margin-bottom: 25px; /* المسافة بين الصورة والعنوان */
+}
+
+.hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+/* النص تحت الصورة */
+.hero-info {
+  text-align: center;
+  max-width: 750px;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .category-hero-section {
+    margin-top: 70px;
+  }
+
+  .hero-img {
+    height: 220px; /* أصغر للموبايل */
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+}
+
+
+
+.category-hero-section-new {
+  width: 100%;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.hero-img-wrapper-new {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  background-color: #eee;
+  
+}
+
+.hero-img-new {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* تمتد على كامل الهيرو */
+  object-position: top center; /* يظهر الجزء المهم من الصورة */
+  transition: transform 0.5s ease;
+}
+
+.hero-img-wrapper-new:hover .hero-img-new {
+  transform: scale(1.05);
+}
+
+.hero-info-new {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.hero-title-new {
+  font-size: 2.8rem; /* كبرنا الخط */
+  font-weight: 800;
+  color: #3775a6;
+  margin-bottom: 12px;
+  animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.hero-desc-new {
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-img-wrapper-new {
+    height: 250px;
+  }
+
+  .hero-title-new {
+    font-size: 1.7rem;
+  }
+
+  .hero-desc-new {
+    font-size: 1rem;
+  }
+}
+
+/* HERO TITLE */
+.hero-title-new {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #3775a6;
+  margin-bottom: 12px;
+  animation: floatText 3s ease-in-out infinite;
+}
+
+/* HERO DESCRIPTION */
+.hero-desc-new {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.8;
+  max-width: 600px;
+  animation: fadeUpDesc 1.2s ease-out forwards;
+}
+
+/* ANIMATIONS */
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpDesc {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* SECTION INTRO WRAPPER */
+.section-intro {
+  position: relative;
+  animation: fadeUpSection 1s ease-out forwards;
+}
+
+/* BADGE */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3775a6;
+  background: rgba(55, 117, 166, 0.08);
+  border-radius: 20px;
+  animation: pulseBadge 3s ease-in-out infinite;
+}
+
+.section-badge i {
+  font-size: 0.9rem;
+}
+
+/* MAIN TITLE */
+.main-section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #3775a6;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.main-section-title span {
+  display: inline-block;
+  animation: floatTitle 3s ease-in-out infinite;
+}
+
+/* DESCRIPTION */
+.section-desc {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto;
+  animation: fadeUpDesc 1.2s ease-out forwards;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUpSection {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatTitle {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpDesc {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseBadge {
+  0% {
+    box-shadow: 0 0 0 rgba(55, 117, 166, 0);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(55, 117, 166, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(55, 117, 166, 0);
+  }
+}
+
+/* CARD */
+.tour-card-advanced {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.tour-card-advanced:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(55,117,166,0.25);
+}
+
+/* IMAGE */
+.tour-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.tour-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.tour-card-advanced:hover .tour-img {
+  transform: scale(1.08);
+}
+
+/* PRICE & DURATION */
+.floating-labels {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 14px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.f-label.duration {
+  background: rgba(0,0,0,0.7);
+}
+
+.f-label.price {
+  background: #3775a6;
+}
+
+/* BODY */
+.tour-body {
+  padding: 15px;
+}
+
+/* TITLE WITH ANIMATION */
+.tour-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3775a6;
+  margin-bottom: 8px;
+  animation: titleFloat 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes titleFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* DESCRIPTION */
+.tour-desc {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* META WITH MORE ICONS */
+.tour-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.tour-meta i {
+  color: #3775a6;
+  margin-right: 5px;
+}
+
+/* TAGS */
+.tour-tags {
+  margin-top: 6px;
+}
+
+.tour-tags .tag {
+  font-size: 0.75rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(55,117,166,0.12);
+  color: #3775a6;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* FOOTER */
+.tour-footer {
+  position: relative;
+  height: 60px;
+  padding: 14px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* BUTTONS (BIGGER) */
+.btn {
+  font-size: 0.85rem;
+  padding: 9px 14px;
+  border-radius: 22px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* DETAILS - LEFT */
+.btn-details {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+  background: transparent;
+  border: 1px solid #3775a6;
+  color: #3775a6;
+}
+
+.btn-details:hover {
+  background: #3775a6;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* BOOK - RIGHT */
+.btn-book {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  background: #3775a6;
+  color: #fff;
+  border: none;
+}
+
+.btn-book:hover {
+  background: #2e6390;
+  transform: translateY(-2px);
+}
+
+/* ICONS */
+.btn i {
+  margin-right: 6px;
+}
+
+.f-label i,
+.tour-tags i {
+  font-size: 0.8rem;
+}
