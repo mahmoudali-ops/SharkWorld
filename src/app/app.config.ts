@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
       withViewTransitions()
     ), 
     provideHttpClient(
-      // تم إزالة withFetch() لأنها تسبب مشاكل مع Cookies في Cross-site scenarios
+      // تم إزالة withFetch()  لأنها تسبب مشاكل مع Cookies في Cross-site scenarios
       // Fetch API لا يرسل Cookies بشكل موثوق مع SameSite=None و Secure=true
       withInterceptors([authInterceptorInterceptor, langInterceptor])
     ),
