@@ -15,11 +15,10 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({scrollPositionRestoration: 'top'}),
       withViewTransitions()
     ), 
-    provideClientHydration(),
     provideHttpClient(
       // تم إزالة withFetch() لأنها تسبب مشاكل مع Cookies في Cross-site scenarios
       // Fetch API لا يرسل Cookies بشكل موثوق مع SameSite=None و Secure=true
-      withInterceptors([langInterceptor,authInterceptorInterceptor])
+      withInterceptors([authInterceptorInterceptor, langInterceptor])
     ),
     provideToastr(),
      provideAnimations()
