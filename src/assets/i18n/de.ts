@@ -182,7 +182,7 @@ export const DE = {
 
     ABOUT_: {
       TITLE: "Wer wir sind",
-      DESCRIPTION_1: "Top Picks Travels ist ein professionelles Tourismusunternehmen, das sich der Schaffung unvergesslicher Reiseerlebnisse in ganz Ägypten widmet. Von kulturellen Touren und Wüstensafaris bis hin zu Meeresabenteuern und Stadtausflügen helfen wir Reisenden, Ägypten komfortabel, sicher und authentisch zu entdecken.",
+      DESCRIPTION_1: "SharkWorldsTravels ist ein professionelles Tourismusunternehmen, das sich der Schaffung unvergesslicher Reiseerlebnisse in ganz Ägypten widmet. Von kulturellen Touren und Wüstensafaris bis hin zu Meeresabenteuern und Stadtausflügen helfen wir Reisenden, Ägypten komfortabel, sicher und authentisch zu entdecken.",
       DESCRIPTION_2: "Unsere Mission ist es, hochwertige Dienstleistungen, wettbewerbsfähige Preise und maßgeschneiderte Reiselösungen anzubieten, die den Bedürfnissen jedes Reisenden entsprechen. Ob allein, mit der Familie oder in der Gruppe – wir sorgen für eine reibungslose und unvergessliche Reise.",
     
       FEATURES: {

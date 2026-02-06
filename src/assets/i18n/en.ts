@@ -91,7 +91,7 @@ export const EN = {
     },
     ABOUT: {
       TITLE: 'About Us',
-      INTRO: 'Top Picks Travels is a professional travel agency based in Hurghada, Egypt,specializing in tours, excursions, snorkeling trips, desert safaris, and private transfers. We help travelers explore the beauty of the Red Sea and the wonders ofEgypt with trusted local guides and exceptional service.',
+      INTRO: 'SharkWorlds is a professional travel agency based in Hurghada, Egypt,specializing in tours, excursions, snorkeling trips, desert safaris, and private transfers. We help travelers explore the beauty of the Red Sea and the wonders ofEgypt with trusted local guides and exceptional service.',
       DESCRIPTION: 'ince 2010, we believe every journey tells a story and every adventure creates lasting memories. We combine top-notch service with modern travel experiences.',
       FEATURES: {
         CUSTOMERS: 'Over 50,000 satisfied customers',
@@ -181,7 +181,7 @@ export const EN = {
   },
   ABOUT_: {
     TITLE: "Who We Are",
-    DESCRIPTION_1: "Top Picks Travels is a professional tourism company dedicated to creating unforgettable travel experiences across Egypt. From cultural tours and desert safaris to sea adventures and city excursions, we help travelers explore Egypt with comfort, safety, and authenticity.",
+    DESCRIPTION_1: "SharkWorlds is a professional tourism company dedicated to creating unforgettable travel experiences across Egypt. From cultural tours and desert safaris to sea adventures and city excursions, we help travelers explore Egypt with comfort, safety, and authenticity.",
     DESCRIPTION_2: "Our mission is to provide high-quality services, competitive prices, and personalized travel solutions that meet the needs of every traveler. Whether you are traveling solo, with family, or in a group, we ensure your journey is smooth and memorable.",
   
     FEATURES: {

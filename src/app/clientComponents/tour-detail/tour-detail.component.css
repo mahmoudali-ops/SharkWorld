@@ -2045,3 +2045,19 @@ swiper-slide img {
   height: 100%; /* بدل auto */
   object-fit: cover; /* يغطي بدون فراغ */
 }
+.tourSwiper {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .tourSwiper {
+    height: 300px;
+  }
+}
+
+.tourSwiper swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

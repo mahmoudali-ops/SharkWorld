@@ -90,7 +90,7 @@ export const FR = {
     },
     ABOUT: {
       TITLE: 'À propos de nous',
-      INTRO: 'Top Picks Travels est une agence de voyages professionnelle basée à Hurghada, en Égypte, spécialisée dans les excursions, les sorties, les plongées avec tuba, les safaris dans le désert et les transferts privés. Nous aidons les voyageurs à explorer la beauté de la mer Rouge et les merveilles de l’Égypte avec des guides locaux de confiance et un service exceptionnel.',
+      INTRO: 'SharkWorldsTravels est une agence de voyages professionnelle basée à Hurghada, en Égypte, spécialisée dans les excursions, les sorties, les plongées avec tuba, les safaris dans le désert et les transferts privés. Nous aidons les voyageurs à explorer la beauté de la mer Rouge et les merveilles de l’Égypte avec des guides locaux de confiance et un service exceptionnel.',
       DESCRIPTION: 'Depuis 2010, nous pensons que chaque voyage raconte une histoire et chaque aventure crée des souvenirs durables. Nous combinons un service de premier ordre avec des expériences de voyage modernes.',
       FEATURES: {
         CUSTOMERS: 'Plus de 50 000 clients satisfaits',
@@ -172,7 +172,7 @@ export const FR = {
     },
     ABOUT_: {
       TITLE: "Qui sommes-nous",
-      DESCRIPTION_1: "Top Picks Travels est une entreprise de tourisme professionnelle dédiée à créer des expériences de voyage inoubliables à travers l'Égypte. Des visites culturelles et safaris dans le désert aux aventures en mer et excursions citadines, nous aidons les voyageurs à explorer l'Égypte avec confort, sécurité et authenticité.",
+      DESCRIPTION_1: "SharkWorldsTravels est une entreprise de tourisme professionnelle dédiée à créer des expériences de voyage inoubliables à travers l'Égypte. Des visites culturelles et safaris dans le désert aux aventures en mer et excursions citadines, nous aidons les voyageurs à explorer l'Égypte avec confort, sécurité et authenticité.",
       DESCRIPTION_2: "Notre mission est de fournir des services de haute qualité, des prix compétitifs et des solutions de voyage personnalisées qui répondent aux besoins de chaque voyageur. Que vous voyagiez seul, en famille ou en groupe, nous assurons que votre voyage se déroule en douceur et reste mémorable.",
       FEATURES: {
         QUALITY: {

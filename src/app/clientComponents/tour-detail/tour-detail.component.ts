@@ -236,4 +236,18 @@ export class TOurDetailComponent  extends ReloadableComponent  {
     });
   }
 
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      const swiperEl = document.querySelector('.tourSwiper') as any;
+
+      if (swiperEl?.swiper) {
+        swiperEl.swiper.update();
+        swiperEl.swiper.slideToLoop(0, 0);
+        swiperEl.swiper.autoplay.start();
+      } else if (swiperEl) {
+        swiperEl.initialize();
+      }
+    }, 300);
+  }
+
 }
