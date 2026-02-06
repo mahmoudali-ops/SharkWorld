@@ -1419,11 +1419,11 @@ swiper-slide * {
   font-weight: 900;
   background: linear-gradient(
     90deg,
-    #84a3de 0%,
-    #5a8de0 25%,
-    #85aef6 50%,
-    #abc3f3 75%,
-    #6dd5fa 100%
+    #ffffff 0%,
+    #ffffff 25%,
+    #ffffff 50%,
+    #ffffff 75%,
+    #ffffff 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -1607,7 +1607,7 @@ swiper-slide * {
   position: relative;
   text-align: center;
   padding-top: 500px; /* نزله لتحت خالص على الديسكتوب */
-  color: #B3E5FC; /* لون فاتح سماوي */
+  color: #ffffff; /* لون فاتح سماوي */
   z-index: 2;
 }
 
@@ -1617,7 +1617,7 @@ swiper-slide * {
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-  color: #e4ecf1;
+  color: #ffffff;
 }
 
 /* الوصف تحت العنوان */
