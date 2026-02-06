@@ -125,140 +125,181 @@
 </section>
 
 <style>
-/* ===== Section ===== */
-.cube-swiper-section {
-  background: #ffffff;
-  padding: 100px 0;
-}
-
-.section-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: #64748b;
-  margin-bottom: 3rem;
-}
-
-/* ===== Swiper Full Width ===== */
-.cube-swiper {
-  width: 100%;
-  max-width: 1200px;
-  height: 500px;
-  margin: auto;
-}
-
-/* ===== Slide Card ===== */
-swiper-slide {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 15px 50px rgba(0,0,0,0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1); /* حركة سلسة */
-}
-
-.slide-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.slide-card:hover img {
-  transform: scale(1.08);
-}
-
-/* Overlay */
-.slide-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 25px;
-  background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);
-  color: #fff;
-}
-
-.slide-overlay h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.slide-overlay .location {
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
-
-/* Pagination bullets */
-.cube-swiper .swiper-pagination-bullet {
-  background: #5a8de0;
-  opacity: 0.7;
-}
-
-.cube-swiper .swiper-pagination-bullet-active {
-  background: #3498db;
-  width: 20px;
-  border-radius: 10px;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 1200px) {
-  .cube-swiper {
-    height: 450px;
+  /* ===== Section ===== */
+  .cube-swiper-section {
+    background: #ffffff;
+    padding: 100px 0;
   }
-}
-
-@media (max-width: 992px) {
-  .cube-swiper {
-    height: 400px;
+  
+  .section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
   }
-
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 3rem;
+  }
+  
+  /* ===== Swiper Full Width ===== */
+  .cube-swiper {
+    width: 100%;
+    max-width: 1200px;
+    height: 50vw; /* responsive height حسب عرض الشاشة */
+    max-height: 500px; /* أقصى ارتفاع */
+    margin: auto;
+    perspective: 1200px; /* مهم لتأثير cube */
+  }
+  
+  /* ===== Slide Card ===== */
+  swiper-slide {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .slide-card img {
+    width: 100%;
+    height: 100%; /* بدل auto */
+    object-fit: cover; /* يغطي كامل الـ slide بدون فراغ */
+    display: block;
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  
+  .slide-card:hover img {
+    transform: scale(1.08);
+  }
+  
+  /* Overlay */
+  .slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 25px;
+    background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);
+    color: #fff;
+  }
+  
   .slide-overlay h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
   }
-
+  
   .slide-overlay .location {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
   }
-}
-
+  
+  /* Pagination bullets */
+  .cube-swiper .swiper-pagination-bullet {
+    background: #5a8de0;
+    opacity: 0.7;
+  }
+  
+  .cube-swiper .swiper-pagination-bullet-active {
+    background: #3498db;
+    width: 20px;
+    border-radius: 10px;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 1200px) {
+    .cube-swiper {
+      height: 45vw;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .cube-swiper {
+      height: 50vw;
+    }
+  
+    .slide-overlay h3 {
+      font-size: 1.7rem;
+    }
+  
+    .slide-overlay .location {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cube-swiper {
+      height: 60vw; /* أعلى شوية عشان تغطي الموبايل */
+    }
+  
+    .slide-overlay h3 {
+      font-size: 1.4rem;
+    }
+  
+    .slide-overlay .location {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cube-swiper {
+      height: 70vw; /* أعلى شوية للموبايل الصغير */
+    }
+  
+    .slide-overlay h3 {
+      font-size: 1.2rem;
+    }
+  
+    .slide-overlay .location {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* ===== Cube Effect Fix ===== */
+  .cube-swiper,
+  .cube-swiper swiper-slide {
+    transform-style: preserve-3d; /* مهم لتأثير cube على الموبايل */
+  }
+  /* ===== Adjust slide-card height on mobile ===== */
 @media (max-width: 768px) {
-  .cube-swiper {
-    height: 350px;
-  }
-
-  .slide-overlay h3 {
-    font-size: 1.4rem;
-  }
-
-  .slide-overlay .location {
-    font-size: 0.95rem;
+  .cube-swiper swiper-slide .slide-card {
+    border-radius: 15px; /* أصغر شوية */
+    overflow: hidden;
+    height: 90%; /* أقل شوية من ارتفاع slide */
   }
 }
 
 @media (max-width: 480px) {
-  .cube-swiper {
-    height: 300px;
-  }
-
-  .slide-overlay h3 {
-    font-size: 1.2rem;
-  }
-
-  .slide-overlay .location {
-    font-size: 0.85rem;
+  .cube-swiper swiper-slide .slide-card {
+    border-radius: 12px;
+    height: 85%; /* أصغر شوية عشان يغطي الموبايل الصغير */
   }
 }
-</style>
+/* ===== Make slide-card fill the slide completely ===== */
+.cube-swiper swiper-slide .slide-card {
+  height: 100%; /* يغطي كامل الـ slide */
+  width: 100%;  /* يغطي كامل الـ slide */
+  border-radius: 20px; /* ممكن تخليه أصغر على الموبايل إذا تحب */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* الصورة تغطي الكارت بالكامل */
+.cube-swiper .slide-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  </style>
+  
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
 
