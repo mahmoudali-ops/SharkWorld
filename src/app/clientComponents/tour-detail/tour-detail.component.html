@@ -1,5 +1,5 @@
 <!-- Tour Header Section - الصورة فقط -->
-@if (DetailedTour()) {
+  @if (DetailedTour()) {
   <section class="category-hero-section-new">
     <div class="hero-img-wrapper-new">
       <img
@@ -21,9 +21,8 @@
     
     
   </section>
-}
+  }
 
-  
   @if (DetailedTour()) {
   <div class="container main-content">
     <div class="row">
@@ -81,7 +80,6 @@
             pagination="true"
             effect="flip"
             grab-cursor="true"
-            flip-effect-slide-shadows="true"
             autoplay-delay="4000"
             autoplay-disable-on-interaction="false"
             speed="1200"
@@ -388,8 +386,7 @@
       </div>
     </div>
   </div>
-  }
-  
+  } 
   <!-- Loading State -->
   @if (!DetailedTour()) {
   <div class="container text-center py-5">
