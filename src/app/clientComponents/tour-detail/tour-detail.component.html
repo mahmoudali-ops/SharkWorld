@@ -12,9 +12,15 @@
 
     <div class="hero-info-new container">
       @for (word of DetailedTour()?.titles?.split(' '); track $index) {
-        <span class="word">{{ word }}</span>
+        <span
+          class="word"
+          [style.--i]="$index"
+        >
+          {{ word }}
+        </span>
       }
     </div>
+    
     
     
     

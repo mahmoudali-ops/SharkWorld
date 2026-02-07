@@ -412,15 +412,13 @@ body {
 /* =========================
    TEXT STYLE
 ========================= */
-.hero-info-new span {
+.hero-info-new .word {
   display: inline-block;
   font-size: 3.8rem;
   font-weight: 900;
   letter-spacing: 2px;
-  position: relative;
-  transform-origin: center center;
+  transform-origin: center;
 
-  /* STRONGER ANIMATED GRADIENT */
   background: linear-gradient(
     120deg,
     #1e4f7a,
@@ -432,19 +430,22 @@ body {
   );
   background-size: 400% 400%;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* Animations */
   animation:
     smoothReveal 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards,
     gradientMoveStrong 4.5s ease-in-out infinite,
     diamondSwing 4s ease-in-out infinite;
 
-  animation-delay: 0s, 1.6s, 2s;
+  /* 👇 STAGGER DYNAMIC */
+  animation-delay:
+    calc(var(--i) * 0.15s),
+    calc(1.6s + var(--i) * 0.15s),
+    calc(2s + var(--i) * 0.15s);
 
   filter: drop-shadow(0 8px 22px rgba(55, 117, 166, 0.45));
 }
+
 
 /* =========================
    CURTAIN EFFECT
