@@ -76,52 +76,97 @@ body.nav-light .dropdown-menu i {
 }
 .pointer {
   cursor: pointer;
+}   /* =========================
+HERO TITLE CONTAINER
+========================= */
+.hero-info-new {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+perspective: 1000px;
+overflow: hidden;
 }
 
-@keyframes diamondSwing {
-  0%, 100% {
-    transform: rotate(0deg) translateY(0);
-  }
-  20% {
-    transform: rotate(4deg) translateY(-6px);
-  }
-  50% {
-    transform: rotate(0deg) translateY(3px);
-  }
-  80% {
-    transform: rotate(-4deg) translateY(-6px);
-  }
-}
+/* =========================
+WORD STYLE
+========================= */
 .hero-info-new .word {
-  display: inline-block;
-  font-size: 3.8rem;
-  font-weight: 900;
-  letter-spacing: 2px;
-  transform-origin: center;
+display: inline-block;
+font-size: 3.8rem;
+font-weight: 900;
+letter-spacing: 2px;
+transform-origin: center;
+will-change: transform, opacity;
 
-  background: linear-gradient(
-    120deg,
-    #1e4f7a,
-    #3775a6,
-    #6fb7e3,
-    #9fd3ff,
-    #3775a6,
-    #1e4f7a
-  );
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* Gradient Text */
+background: linear-gradient(
+ 120deg,
+ #1e4f7a,
+ #3775a6,
+ #6fb7e3,
+ #9fd3ff,
+ #3775a6,
+ #1e4f7a
+);
+background-size: 400% 400%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 
-  animation:
-    smoothReveal 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards,
-    gradientMoveStrong 4.5s ease-in-out infinite,
-    diamondSwing 4s ease-in-out infinite;
+/* Animations */
+animation:
+ heroRevealFromBottom 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+ gradientMoveStrong 4.5s ease-in-out infinite,
+ diamondSwing 4s ease-in-out infinite;
 
-  /* 👇 STAGGER DYNAMIC */
-  animation-delay:
-    calc(var(--i) * 0.15s),
-    calc(1.6s + var(--i) * 0.15s),
-    calc(2s + var(--i) * 0.15s);
+/* 🔥 STAGGER (production safe) */
+animation-delay:
+ calc(var(--i) * 0.15s),
+ calc(1.4s + var(--i) * 0.15s),
+ calc(2s + var(--i) * 0.15s);
 
-  filter: drop-shadow(0 8px 22px rgba(55, 117, 166, 0.45));
+filter: drop-shadow(0 8px 22px rgba(55, 117, 166, 0.45));
+}
+
+/* =========================
+KEYFRAMES
+========================= */
+
+/* 🔥 Reveal from bottom (cinematic) */
+@keyframes heroRevealFromBottom {
+0% {
+ opacity: 0;
+ transform: translateY(80px) scale(0.9);
+ filter: blur(8px);
+}
+60% {
+ opacity: 1;
+ transform: translateY(-6px) scale(1.03);
+ filter: blur(0);
+}
+100% {
+ transform: translateY(0) scale(1);
+}
+}
+
+/* Gradient animation */
+@keyframes gradientMoveStrong {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+/* Subtle swing (continuous) */
+@keyframes diamondSwing {
+0%, 100% {
+ transform: rotate(0deg) translateY(0);
+}
+20% {
+ transform: rotate(3deg) translateY(-5px);
+}
+50% {
+ transform: rotate(0deg) translateY(3px);
+}
+80% {
+ transform: rotate(-3deg) translateY(-5px);
+}
 }
