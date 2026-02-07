@@ -56,28 +56,28 @@ export const routes: Routes = [
       path: 'admin',
       loadComponent: () => import('./layouts/admin-layout/admin-layout.component').then(m => m.AdminLayoutComponent),
       children: [
-        { path: 'login', loadComponent: () => import('./adminCompoents/login/login.component').then(m => m.LoginComponent), canActivate: [logedGuard], title: 'Login' },
+        { path: 'login', loadComponent: () => import('./adminCompoents/login/login.component').then(m => m.LoginComponent), canActivate: [], title: 'Login' },
         { path: 'register', loadComponent: () => import('./adminCompoents/register/register.component').then(m => m.RegisterComponent), title: 'Register' },
   
-        { path: 'tours', loadComponent: () => import('./adminCompoents/tours-ad/tours-ad.component').then(m => m.ToursAdComponent), canActivate: [authGuardGuard], title: 'Tours Dashboard' },
-        { path: 'categorytour', loadComponent: () => import('./adminCompoents/categorytour-ad/categorytour-ad.component').then(m => m.CategorytourAdComponent), canActivate: [authGuardGuard], title: 'Category Tour Dashboard' },
-        { path: 'destnaions', loadComponent: () => import('./adminCompoents/destnation-ad/destnation-ad.component').then(m => m.DestnationAdComponent), canActivate: [authGuardGuard], title: 'Destnaions Dashboard' },
-        { path: 'transfers', loadComponent: () => import('./adminCompoents/trasnfers-ad/trasnfers-ad.component').then(m => m.TrasnfersAdComponent), canActivate: [authGuardGuard], title: 'Transfers Dashboard' },
+        { path: 'tours', loadComponent: () => import('./adminCompoents/tours-ad/tours-ad.component').then(m => m.ToursAdComponent), canActivate: [], title: 'Tours Dashboard' },
+        { path: 'categorytour', loadComponent: () => import('./adminCompoents/categorytour-ad/categorytour-ad.component').then(m => m.CategorytourAdComponent), canActivate: [], title: 'Category Tour Dashboard' },
+        { path: 'destnaions', loadComponent: () => import('./adminCompoents/destnation-ad/destnation-ad.component').then(m => m.DestnationAdComponent), canActivate: [], title: 'Destnaions Dashboard' },
+        { path: 'transfers', loadComponent: () => import('./adminCompoents/trasnfers-ad/trasnfers-ad.component').then(m => m.TrasnfersAdComponent), canActivate: [], title: 'Transfers Dashboard' },
   
-        { path: 'emails', loadComponent: () => import('./adminCompoents/email-ad/email-ad.component').then(m => m.EmailAdComponent), canActivate: [authGuardGuard], title: 'Emails' },
-        { path: 'users', loadComponent: () => import('./adminCompoents/users/users.component').then(m => m.UsersComponent), canActivate: [authGuardGuard], title: 'Users' },
+        { path: 'emails', loadComponent: () => import('./adminCompoents/email-ad/email-ad.component').then(m => m.EmailAdComponent), canActivate: [], title: 'Emails' },
+        { path: 'users', loadComponent: () => import('./adminCompoents/users/users.component').then(m => m.UsersComponent), canActivate: [], title: 'Users' },
   
-        { path: 'tourCreate', loadComponent: () => import('./adminCompoents/create-tour/create-tour.component').then(m => m.CreateTourComponent), canActivate: [authGuardGuard], title: 'Admin Create a Tour' },
-        { path: 'tourUpdate/:id', loadComponent: () => import('./adminCompoents/update-tour/update-tour.component').then(m => m.UpdateTourComponent), canActivate: [authGuardGuard], title: 'Admin Update a Tour' },
+        { path: 'tourCreate', loadComponent: () => import('./adminCompoents/create-tour/create-tour.component').then(m => m.CreateTourComponent), canActivate: [], title: 'Admin Create a Tour' },
+        { path: 'tourUpdate/:id', loadComponent: () => import('./adminCompoents/update-tour/update-tour.component').then(m => m.UpdateTourComponent), canActivate: [], title: 'Admin Update a Tour' },
   
-        { path: 'destnationCreate', loadComponent: () => import('./adminCompoents/create-destnaions/create-destnaions.component').then(m => m.CreateDestnaionsComponent), canActivate: [authGuardGuard], title: 'Admin Create a Destnation' },
-        { path: 'destnationUpdate/:id', loadComponent: () => import('./adminCompoents/update-destnaions/update-destnaions.component').then(m => m.UpdateDestnaionsComponent), canActivate: [authGuardGuard], title: 'Admin Update a Destnation' },
+        { path: 'destnationCreate', loadComponent: () => import('./adminCompoents/create-destnaions/create-destnaions.component').then(m => m.CreateDestnaionsComponent), canActivate: [], title: 'Admin Create a Destnation' },
+        { path: 'destnationUpdate/:id', loadComponent: () => import('./adminCompoents/update-destnaions/update-destnaions.component').then(m => m.UpdateDestnaionsComponent), canActivate: [], title: 'Admin Update a Destnation' },
   
-        { path: 'catTourCreate', loadComponent: () => import('./adminCompoents/create-cat-tour/create-cat-tour.component').then(m => m.CreateCatTourComponent), canActivate: [authGuardGuard], title: 'Admin Create a Category Tour' },
-        { path: 'catTourUpdate/:id', loadComponent: () => import('./adminCompoents/update-cat-tour/update-cat-tour.component').then(m => m.UpdateCatTourComponent), canActivate: [authGuardGuard], title: 'Admin Update a Category Tour' },
+        { path: 'catTourCreate', loadComponent: () => import('./adminCompoents/create-cat-tour/create-cat-tour.component').then(m => m.CreateCatTourComponent), canActivate: [], title: 'Admin Create a Category Tour' },
+        { path: 'catTourUpdate/:id', loadComponent: () => import('./adminCompoents/update-cat-tour/update-cat-tour.component').then(m => m.UpdateCatTourComponent), canActivate: [], title: 'Admin Update a Category Tour' },
   
-        { path: 'transferCreate', loadComponent: () => import('./adminCompoents/create-transfer/create-transfer.component').then(m => m.CreateTransferComponent), canActivate: [authGuardGuard], title: 'Admin Create a Transfer' },
-        { path: 'transferUpdate/:id', loadComponent: () => import('./adminCompoents/update-transfer/update-transfer.component').then(m => m.UpdateTransferComponent), canActivate: [authGuardGuard], title: 'Admin Update a Transfer' },
+        { path: 'transferCreate', loadComponent: () => import('./adminCompoents/create-transfer/create-transfer.component').then(m => m.CreateTransferComponent), canActivate: [], title: 'Admin Create a Transfer' },
+        { path: 'transferUpdate/:id', loadComponent: () => import('./adminCompoents/update-transfer/update-transfer.component').then(m => m.UpdateTransferComponent), canActivate: [], title: 'Admin Update a Transfer' },
   
         { path: '', redirectTo: 'tours', pathMatch: 'full' },
         { path: '**', redirectTo: 'tours' },
