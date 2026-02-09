@@ -30,7 +30,12 @@ export const DE = {
     },
     HERO: {
       TITLE: 'Komfortable & Schnelle Transfers',
-      DESC: 'Genießen Sie sichere, zuverlässige und unkomplizierte Transportmöglichkeiten zu Ihrem Ziel — jederzeit, überall.'
+      DESC: 'Genießen Sie sichere, zuverlässige und unkomplizierte Transportmöglichkeiten zu Ihrem Ziel — jederzeit, überall.',
+      SLIDE_1: { TITLE: "SharkWorlds", SUBTITLE: "Entdecken Sie das Rote Meer" },
+      SLIDE_2: { TITLE: "Tauchgänge", SUBTITLE: "Erkunden Sie die Unterwasserwelt" },
+      SLIDE_3: { TITLE: "Abenteuer erwarten Sie", SUBTITLE: "Unvergessliche Erlebnisse" },
+      SLIDE_4: { TITLE: "Abenteuer erwarten Sie", SUBTITLE: "Unvergessliche Erlebnisse" },
+      SLIDE_5: { TITLE: "Abenteuer erwarten Sie", SUBTITLE: "Unvergessliche Erlebnisse" }
     },
     BUTTON: {
       VIEW: 'Ansehen',

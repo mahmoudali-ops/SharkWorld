@@ -29,7 +29,12 @@ export const FR = {
     },
     HERO: {
       TITLE: 'Transports confortables et rapides',
-      DESC: 'Profitez d’un transport sûr, fiable et sans tracas vers votre destination — à tout moment, n’importe où.'
+      DESC: 'Profitez d’un transport sûr, fiable et sans tracas vers votre destination — à tout moment, n’importe où.',
+      SLIDE_1: { TITLE: "SharkWorlds", SUBTITLE: "Découvrez la mer Rouge" },
+      SLIDE_2: { TITLE: "Excursions plongée", SUBTITLE: "Explorez la magie sous-marine" },
+      SLIDE_3: { TITLE: "L'aventure vous attend", SUBTITLE: "Des expériences inoubliables" },
+      SLIDE_4: { TITLE: "L'aventure vous attend", SUBTITLE: "Des expériences inoubliables" },
+      SLIDE_5: { TITLE: "L'aventure vous attend", SUBTITLE: "Des expériences inoubliables" }
     },
     BUTTON: {
       VIEW: 'Voir',
