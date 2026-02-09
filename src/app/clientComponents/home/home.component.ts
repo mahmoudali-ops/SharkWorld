@@ -1,6 +1,5 @@
 import { CattourService } from './../../core/services/cattour.service';
 import {  ChangeDetectorRef, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, HostListener, Inject, inject, OnDestroy, OnInit, PLATFORM_ID, signal, ViewChild, WritableSignal } from '@angular/core';
-import { register } from 'swiper/element/bundle';
 import { Router, RouterLink } from "@angular/router";
 import { DestnatoinService } from '../../core/services/destnatoin.service';
 import { IDestnation } from '../../core/interfaces/idestnation';
@@ -16,6 +15,10 @@ import { ReloadableComponent } from '../reloadable/reloadable.component';
 import { ReloadService } from '../../core/services/reload.service';
 import { TranslatedPipe } from '../../core/pipes/translate.pipe';
 import { Meta, Title } from '@angular/platform-browser';
+import { register } from 'swiper/element/bundle';
+
+register();
+
 
 register();
 
@@ -125,46 +128,33 @@ export class HomeComponent  extends ReloadableComponent {
   @ViewChild('heroVideo') heroVideo!: ElementRef<HTMLVideoElement>;
 videoFallback = false;
 
-ngAfterViewInit() {
-  if (!isPlatformBrowser(this.platformId) || !this.heroVideo) {
-    return;
-  }
-  setTimeout(() => {
-    this.swiperEl.nativeElement.swiper.update();
-  }, 0);
-  const video = this.heroVideo.nativeElement;
+ngAfterViewInit(): void {
+  const swiperEl = document.querySelector('.heroSwiper') as any;
 
-  video.setAttribute('muted', '');
-  video.setAttribute('playsinline', '');
-  video.setAttribute('webkit-playsinline', '');
-  video.muted = true;
-  video.volume = 0;
-
-  const attemptPlay = (retry = 0) => {
-    video.play().catch(() => {
-      if (retry < 2) {
-        setTimeout(() => attemptPlay(retry + 1), 200);
+  Object.assign(swiperEl, {
+    slidesPerView: 1,
+    loop: true,
+    speed: 1200,
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false
+    },
+    grabCursor: true,
+    effect: 'creative',
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -400]
+      },
+      next: {
+        translate: ['100%', 0, 0]
       }
-    });
-  };
-
-  if (video.readyState >= 2) {
-    attemptPlay();
-  } else {
-    video.addEventListener('loadedmetadata', () => attemptPlay(), { once: true });
-    video.addEventListener('canplay', () => attemptPlay(), { once: true });
-  }
-
-  setTimeout(() => {
-    if (video.readyState < 2 && video.paused) {
-      this.videoFallback = true;
     }
-  }, 4000);
-
-  video.addEventListener('error', () => {
-    this.videoFallback = true;
   });
+
+  swiperEl.initialize();
 }
+
 
 
 

@@ -46,12 +46,8 @@ export class UpdateTourComponent implements OnInit {
   private readonly router = inject(Router);
   private readonly route = inject(ActivatedRoute);
   categories = [
-    { id: 28, name: 'sea tours hurghada' },
-    { id: 34, name: 'thing to do hurghada' },
-    { id: 37, name: 'diving' },
-    { id: 38, name: 'cairo tours hurghada' },
-    { id: 39, name: 'luxor tours hurghada' },
-    { id: 40, name: 'safari tours hurghada' }
+    { id: 28, name: 'Sea Tours Hurghada' },
+    { id: 37, name: 'Diving Tours Hurghada' },
   ];
   languages = ['en', 'de', 'fr'];
   selectedLang: string = 'en';
@@ -113,7 +109,6 @@ export class UpdateTourComponent implements OnInit {
       translations: this.fb.group({
         en: this.createTranslationGroup(),
         de: this.createTranslationGroup(),
-        nl: this.createTranslationGroup(),
 
         fr: this.createTranslationGroup(),
       }),
@@ -121,21 +116,18 @@ export class UpdateTourComponent implements OnInit {
       includes: this.fb.group({
         en: this.fb.array([]),
         de: this.fb.array([]),
-        nl: this.fb.array([]),
         fr: this.fb.array([]),
       }),
 
       notIncludes: this.fb.group({
         en: this.fb.array([]),
         de: this.fb.array([]),
-        nl: this.fb.array([]),
         fr: this.fb.array([]),
       }),
 
       highlights: this.fb.group({
         en: this.fb.array([]),
         de: this.fb.array([]),
-        nl: this.fb.array([]),
         fr: this.fb.array([]),
       }),
     });

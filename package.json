@@ -9,8 +9,7 @@
     "test": "ng test",
     "serve:ssr:TourSiteClient": "node dist/tour-site-client/server/server.mjs",
     "build:ssr": "ng build && ng run TourSiteClient:server:production",
-"serve:ssr": "node dist/tour-site-client/server/server.mjs"
-
+    "serve:ssr": "node dist/tour-site-client/server/server.mjs"
   },
   "private": true,
   "dependencies": {

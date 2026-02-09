@@ -1,9 +1,60 @@
+<swiper-container
+  class="heroSwiper"
+  init="false"
+>
+  <!-- Slide 1 -->
+  <swiper-slide>
+    <img src="../../../assets/images/dev4.jpg" />
+    <div class="hero-caption left-bottom">
+      <h1>SharkWorlds</h1>
+      <p>Discover the Red Sea</p>
+    </div>
+  </swiper-slide>
+
+  <!-- Slide 2 -->
+  <swiper-slide>
+    <img src="../../../assets/images/diving3.jpg" />
+    <div class="hero-caption left-bottom">
+      <h1>Diving Tours</h1>
+      <p>Explore underwater magic</p>
+    </div>
+  </swiper-slide>
+
+  <!-- Slide 3 -->
+  <swiper-slide>
+    <img src="../../../assets/images/diving9.jpg" />
+    <div class="hero-caption left-bottom">
+      <h1>Adventure Awaits</h1>
+      <p>Unforgettable experiences</p>
+    </div>
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="../../../assets/images/dev2.webp" />
+    <div class="hero-caption left-bottom">
+      <h1>Adventure Awaits</h1>
+      <p>Unforgettable experiences</p>
+    </div>
+  </swiper-slide>
+
+  <swiper-slide>
+    <img src="../../../assets/images/dev3.jpg" />
+    <div class="hero-caption left-bottom">
+      <h1>Adventure Awaits</h1>
+      <p>Unforgettable experiences</p>
+    </div>
+  </swiper-slide>
+
+`
+
+ 
+</swiper-container>
+
 <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
     <!-- Indicators -->
   
-    <section class="hero-section">
+    <!-- <section class="hero-section">
 
-      <!-- الفيديو -->
       <video 
         #heroVideo
         class="hero-video" 
@@ -18,24 +69,21 @@
         [class.video-hidden]="videoFallback"
       >
         <source src="../../../assets/videos/newvideo.mp4" type="video/mp4">
-        <!-- <sour ce src="assets/videos/videoss.webm" type="video/webm"> -->
       </video>
 
       @if (videoFallback) {
         <div class="hero-fallback"></div>
       }
     
-      <!-- طبقة غامقة بسيطة لتحسين وضوح النص -->
       <div class="overlay"></div>
     
-      <!-- محتوى الهيرو -->
       <div class="hero-content">
         <h1 class="brand-name">Shark World</h1>
         <p class="brand-subtitle">{{ 'HeroDiscription' | t }}</p>
       </div>
   
     
-    </section>
+    </section> -->
     
     
   

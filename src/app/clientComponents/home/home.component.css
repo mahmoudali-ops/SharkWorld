@@ -3019,3 +3019,88 @@ swiper-slide * {
 
   .experience-list li { justify-content: center; }
 }
+/* =========================
+   HERO SWIPER CONTAINER
+========================= */
+.heroSwiper {
+  width: 100%;
+  height: 100vh;          /* يغطي كامل الـ Hero section */
+  overflow: hidden;       /* يمنع أي فراغ أثناء الحركة */
+  perspective: 1200px;    /* مهم لتأثير 3D لو هنعمل حركة rotate */
+}
+
+/* =========================
+   SWIPER SLIDES
+========================= */
+.heroSwiper swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* =========================
+   SLIDE IMAGES
+========================= */
+.heroSwiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* الصورة تغطي كامل الـ slide */
+  display: block;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+/* =========================
+   HERO CAPTION
+========================= */
+.hero-caption {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+  padding: 1rem 2rem;
+  max-width: 420px;
+  border-radius: 0;        /* شيل الحواف المدورة */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* ظل خفيف للقراءة على الصور */
+}
+
+/* Caption Titles */
+.hero-caption h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #01609f;
+}
+
+.hero-caption p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  line-height: 1.3;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero-caption {
+    bottom: 5%;
+    left: 5%;
+    padding: 0.8rem 1.5rem;
+    max-width: 90%;
+  }
+
+  .hero-caption h1 {
+    font-size: 2rem;
+  }
+
+  .hero-caption p {
+    font-size: 1rem;
+  }
+}
