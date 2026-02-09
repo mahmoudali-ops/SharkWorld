@@ -14,7 +14,7 @@
 }
 
 .main-nav.scrolled {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   padding: 10px 0;
   backdrop-filter: blur(8px) saturate(180%);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -104,7 +104,7 @@
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -187,7 +187,7 @@
 
 /* Pre-scroll dropdown styles */
 .main-nav:not(.scrolled) .dropdown-menu {
-  background: rgba(15, 15, 25, 0.95) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(12px) !important;
   border: 1px solid rgba(37, 150, 190, 0.25) !important;
 }
@@ -401,18 +401,19 @@
 }
 
 /* =======================
-   OFFCANVAS MENU
+   OFFCANVAS MENU (تعديل ليظهر من اليمين)
 ======================= */
 .offcanvas-menu {
   position: fixed;
   top: 0;
-  left: -100%;
-  width: 450px; /* تصغير القائمة */
+  right: -100%; /* تغيير من left إلى right */
+  left: auto; /* إضافة هذه الخاصية */
+  width: 450px;
   max-width: 85vw;
   height: 100vh;
-  max-height: 90vh; /* تقليل ارتفاع القائمة */
-  margin-top: 5vh; /* إضافة مسافة من الأعلى */
-  margin-bottom: 5vh; /* إضافة مسافة من الأسفل */
+  max-height: 90vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   
   background: linear-gradient(135deg, 
     rgba(10, 25, 47, 0.98) 0%, 
@@ -423,20 +424,21 @@
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); /* حركة أنعم */
-  transform: translateX(-20px);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: translateX(20px); /* تغيير من -20px إلى 20px */
   opacity: 0;
   
-  box-shadow: 20px 0 50px rgba(0, 0, 0, 0.6);
+  box-shadow: -20px 0 50px rgba(0, 0, 0, 0.6); /* تغيير إشارة shadow */
   
-  border-right: 3px solid;
+  border-left: 3px solid; /* تغيير من border-right إلى border-left */
+  border-right: none; /* إضافة */
   border-image: linear-gradient(
     45deg,
     #2596be,
     #4ba9cf,
     #2596be
   ) 1;
-  border-radius: 0 20px 20px 0;
+  border-radius: 20px 0 0 20px; /* تعديل border-radius */
 }
 
 /* تأثير شبه زجاجي */
@@ -448,14 +450,15 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 70% 20%, rgba(37, 150, 190, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 30% 80%, rgba(75, 169, 207, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 30% 20%, rgba(37, 150, 190, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(75, 169, 207, 0.1) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
 }
 
 .offcanvas-menu.active {
-  left: 0;
+  right: 0; /* تغيير من left إلى right */
+  left: auto; /* إضافة */
   transform: translateX(0);
   opacity: 1;
   animation: gentleSlideIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
@@ -463,15 +466,17 @@
 
 @keyframes gentleSlideIn {
   0% {
-    left: -100%;
-    transform: translateX(-30px);
+    right: -100%; /* تغيير من left إلى right */
+    left: auto; /* إضافة */
+    transform: translateX(30px); /* تغيير من -30px إلى 30px */
     opacity: 0;
   }
   50% {
-    transform: translateX(10px);
+    transform: translateX(-10px); /* تغيير من 10px إلى -10px */
   }
   100% {
-    left: 0;
+    right: 0; /* تغيير من left إلى right */
+    left: auto; /* إضافة */
     transform: translateX(0);
     opacity: 1;
   }
@@ -488,7 +493,7 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0 20px 0 0;
+  border-radius: 20px 0 0 0; /* تعديل border-radius */
 }
 
 /* فاصل زخرفي للرأس */
@@ -586,7 +591,7 @@
 
 .offcanvas-links > li:hover {
   background: rgba(255, 255, 255, 0.07);
-  transform: translateX(8px);
+  transform: translateX(-8px); /* تغيير من 8px إلى -8px */
   border-color: rgba(37, 150, 190, 0.2);
 }
 
@@ -718,7 +723,7 @@
   padding: 25px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.04);
-  border-radius: 0 0 20px 0;
+  border-radius: 0 0 0 20px; /* تعديل border-radius */
 }
 
 .offcanvas-social a {
@@ -888,7 +893,7 @@ body.offcanvas-open {
   animation: slideInFade 0.5s ease forwards;
   animation-delay: calc(var(--item-index, 0) * 0.05s);
   opacity: 0;
-  transform: translateX(-15px);
+  transform: translateX(15px); /* تغيير من -15px إلى 15px */
 }
 
 @keyframes slideInFade {
@@ -904,7 +909,7 @@ body.offcanvas-open {
 .main-nav.light:not(.scrolled) .nav-links a,
 .main-nav.light:not(.scrolled) .logo,
 .main-nav.light:not(.scrolled) .social-icons a {
-  color: #111 !important;
+  color: #ffffff !important;
 }
 
 .main-nav.light:not(.scrolled) .nav-links a:hover,
@@ -931,4 +936,3 @@ body.offcanvas-open {
   outline: 2px solid rgba(37, 150, 190, 0.5);
   outline-offset: 2px;
 }
-

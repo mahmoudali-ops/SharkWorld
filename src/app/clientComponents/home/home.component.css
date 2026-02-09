@@ -1041,7 +1041,7 @@ swiper-slide * {
 /* النصوص */
 .intro-text {
   font-size: 1.4rem;
-  color: #334155;
+  color: #000000;
   line-height: 1.7;
   margin-bottom: 25px;
   font-weight: 600;
@@ -1051,7 +1051,7 @@ swiper-slide * {
 
 .description-text {
   font-size: 1.1rem;
-  color: #475569;
+  color: #000000;
   line-height: 1.9;
   margin-bottom: 30px;
   opacity: 0;
@@ -1070,7 +1070,7 @@ swiper-slide * {
   align-items: center;
   margin-bottom: 20px;
   padding: 18px 24px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(49, 49, 49, 0.8);
   border-radius: 16px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(226, 232, 240, 0.8);
@@ -2440,8 +2440,8 @@ swiper-slide * {
 .about-section {
   background: linear-gradient(
     135deg,
-    #5a8de0,
-    #6dd5fa,
+    #ffffff,
+    #c6ebf9,
     #b3e5fc
   );
   padding: 100px 0;
@@ -2466,19 +2466,19 @@ swiper-slide * {
 .section-title {
   font-size: 3rem;
   font-weight: 800;
-  color: #eafaff;
+  color: #000000;
   margin-bottom: 20px;
 }
 
 .intro-text {
   font-size: 1.3rem;
   font-weight: 500;
-  color: #eafaff;
+  color: #000000;
 }
 
 .description-text {
   font-size: 1.05rem;
-  color: #f1fbff;
+  color: #000000;
   line-height: 1.8;
   margin-top: 15px;
 }
@@ -2495,22 +2495,22 @@ swiper-slide * {
   margin-bottom: 12px;
   padding-left: 28px;
   position: relative;
-  color: #ffffff;
+  color: #000000;
 }
 
 .features-list li::before {
   content: "✦";
   position: absolute;
   left: 0;
-  color: #e0f7ff;
+  color: #000000;
   font-size: 1.2rem;
 }
 
 /* ===== الزرار ===== */
 .about-btn {
   margin-top: 30px;
-  background: #e0f7ff;
-  color: #5a8de0;
+  background: #2154fa;
+  color: #b3caf0;
   padding: 14px 38px;
   font-size: 1.05rem;
   font-weight: 700;
