@@ -909,7 +909,7 @@ body.offcanvas-open {
 .main-nav.light:not(.scrolled) .nav-links a,
 .main-nav.light:not(.scrolled) .logo,
 .main-nav.light:not(.scrolled) .social-icons a {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .main-nav.light:not(.scrolled) .nav-links a:hover,

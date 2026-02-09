@@ -90,6 +90,9 @@ export const FR = {
     },
     ABOUT: {
       TITLE: 'À propos de nous',
+      TEXT_1: 'SharkWorlds est bien plus qu’une simple agence de voyage — nous sommes une équipe d’explorateurs passionnés dédiée à la création d’expériences de voyage exceptionnelles. Des eaux cristallines aux aventures inoubliables, chaque voyage devient une histoire à raconter.',
+      TEXT_2: 'Notre mission est d’offrir un service d’excellence, des expériences authentiques et une tranquillité d’esprit totale. Chaque voyage est soigneusement conçu pour garantir confort, émotions et souvenirs inoubliables.',
+
       INTRO: 'SharkWorldsTravels est une agence de voyages professionnelle basée à Hurghada, en Égypte, spécialisée dans les excursions, les sorties, les plongées avec tuba, les safaris dans le désert et les transferts privés. Nous aidons les voyageurs à explorer la beauté de la mer Rouge et les merveilles de l’Égypte avec des guides locaux de confiance et un service exceptionnel.',
       DESCRIPTION: 'Depuis 2010, nous pensons que chaque voyage raconte une histoire et chaque aventure crée des souvenirs durables. Nous combinons un service de premier ordre avec des expériences de voyage modernes.',
       FEATURES: {
@@ -110,66 +113,69 @@ export const FR = {
         ADVENTURE: "Aventure"
       },
       HURGHADA: {
-        TITLE: "Principales activités à faire à Hurghada",
-        EXCERPT: "Découvrez les meilleures activités à Hurghada, de la plongée avec tuba et la plongée sous-marine aux safaris dans le désert et aux excursions insulaires."
+        TITLE: "Excursions en mer inoubliables à Hurghada",
+        EXCERPT: "Profitez d’excursions en mer exceptionnelles à Hurghada, avec des îles paradisiaques, du snorkeling, des eaux cristallines et des croisières relaxantes."
       },
       LUXOR: {
-        TITLE: "Pourquoi Louxor est le plus grand musée en plein air du monde",
-        EXCERPT: "Explorez les merveilles antiques de Louxor, y compris le temple de Karnak, la Vallée des Rois, et plus encore."
+        TITLE: "Plongées exceptionnelles à Hurghada",
+        EXCERPT: "Découvrez des excursions de plongée incroyables à Hurghada, avec des récifs coralliens colorés, une vie marine riche et des expériences sous-marines inoubliables."
       }
+      
     },
     HURGHADA_BLOG: {
-      TITLE: "Hurghada Mer Rouge Égypte - Meilleures choses à faire",
-      SUBTITLE: "Découvrez les meilleures plages, spots de plongée, resorts et expériences culturelles à Hurghada avec TopPicksTravels",
-      INTRO_TITLE: "Aperçu de la ville d'Hurghada",
-      INTRO_TEXT: "Hurghada est l'une des destinations touristiques les plus populaires d'Égypte, située le long de la côte de la mer Rouge. Connue pour ses eaux turquoise, ses plages de sable doré, sa vie nocturne animée et ses resorts de luxe, Hurghada attire des voyageurs du monde entier. Que vous cherchiez de la plongée sous-marine, du snorkeling, des aventures dans le désert ou de la détente au bord de la mer Rouge, Hurghada a tout pour rendre vos vacances inoubliables. Explorez les récifs coralliens, les îles et la vie marine pour une expérience unique.",
+      TITLE: "Hurghada Mer Rouge Égypte – Meilleures excursions en mer & aventures insulaires",
+      SUBTITLE: "Découvrez des excursions en mer inoubliables, des sorties sur les îles, du snorkeling et des expériences balnéaires à Hurghada avec TopPicksTravels",
+      INTRO_TITLE: "Aperçu des excursions maritimes à Hurghada",
+      INTRO_TEXT: "Hurghada est l’une des destinations les plus populaires de la mer Rouge en Égypte, célèbre pour ses eaux cristallines, ses récifs coralliens colorés et ses îles magnifiques. La ville propose une grande variété d’excursions en mer, notamment le snorkeling, les excursions vers les îles, les croisières en bateau et les journées détente à la plage. Que vous recherchiez l’aventure ou la relaxation, les expériences maritimes de Hurghada promettent des souvenirs inoubliables dans un cadre naturel exceptionnel.",
       WHERE_TO_STAY_TITLE: "Où séjourner à Hurghada",
-      WHERE_TO_STAY_TEXT: "Hurghada propose un large éventail d'hébergements, y compris des resorts de luxe, des hôtels 5 étoiles, des hôtels boutique et des options économiques. De nombreux resorts proposent des forfaits tout compris avec plages privées, piscines, spas et restaurants servant des cuisines égyptienne, méditerranéenne et internationale. Les zones populaires incluent Sahl Hasheesh, El Gouna et le centre-ville principal. De nombreux hôtels peuvent également organiser des excursions guidées vers Louxor, le Caire et des safaris dans le désert à proximité.",
-      WHAT_TO_DO_TITLE: "Choses à faire à Hurghada",
+      WHERE_TO_STAY_TEXT: "Hurghada propose un large choix de resorts et d’hôtels en bord de mer, dont beaucoup offrent un accès direct à des plages privées et aux excursions en mer. Les hôtels de luxe, les formules tout compris et les hébergements familiaux permettent un accès facile aux sorties quotidiennes en bateau, au snorkeling et aux excursions vers des îles comme Giftun Island et Orange Bay.",
+      WHAT_TO_DO_TITLE: "Activités à Hurghada",
       FOOD_TITLE: "Cuisine locale et internationale",
-      FOOD_TEXT: "Hurghada a une scène culinaire éclectique avec des restaurants offrant des spécialités égyptiennes, des fruits de mer frais, des plats asiatiques et une cuisine internationale. Les lieux incontournables incluent le White Elephant, StarFish, Nubian Café et les marchés de rue locaux offrant des saveurs égyptiennes authentiques. Dîner à Hurghada allie repas délicieux et vues magnifiques sur la mer.",
-      SCUBA_TITLE: "Plongée sous-marine et snorkeling",
-      SCUBA_TEXT: "Hurghada est l'une des principales destinations de plongée au monde. Vous pouvez suivre des cours PADI, des plongées sur épaves, des plongées de nuit, ou simplement profiter du snorkeling parmi les récifs coralliens vibrants et la vie marine exotique. Les excursions de plongée sont disponibles pour les débutants et les plongeurs expérimentés, offrant des aventures sous-marines inoubliables.",
-      QUAD_TITLE: "Safari dans le désert en quad",
-      QUAD_TEXT: "Vivez l'expérience du désert égyptien lors d'un safari palpitant en quad. Visitez des villages bédouins, savourez la cuisine arabe locale, montez à dos de chameau et essayez même le surf des dunes. Un guide professionnel assure que votre aventure dans le désert est sûre, amusante et pleine d'expériences inoubliables.",
-      OTHER_TITLE: "Autres activités à Hurghada",
-      ACTIVITY_1: "Planche à voile, kitesurf et jetski",
-      ACTIVITY_2: "Excursions à Louxor ou au Caire",
-      ACTIVITY_3: "Visite du monastère Saint-Antoine et Saint-Paul",
-      ACTIVITY_4: "Activités balnéaires et détente",
-      ACTIVITY_5: "Excursions snorkeling aux îles de la mer Rouge",
-      BEACHES_TITLE: "Magnifiques plages à Hurghada",
-      BEACHES_TEXT: "Hurghada est célèbre pour ses plages immaculées comme Makadi Bay, Sahl Hasheesh et les îles Giftun. Profitez du bronzage, de la natation et des sports nautiques dans des eaux cristallines. Les plages sont parfaites pour les familles, les couples et les voyageurs solo cherchant détente et aventure.",
-      DIVING_TOURS_TITLE: "Excursions de plongée en mer Rouge",
-      DIVING_TOURS_TEXT: "Explorez certains des plus beaux récifs coralliens, épaves et réserves marines du monde. Les excursions de plongée en mer Rouge à Hurghada offrent des expériences uniques avec des instructeurs qualifiés et des mesures de sécurité, adaptées à tous les niveaux.",
-      LOCAL_MARKETS_TITLE: "Explorez les marchés locaux",
-      LOCAL_MARKETS_TEXT: "Les marchés locaux d'Hurghada, comme le marché de la Marina d'Hurghada, offrent un mélange vibrant de souvenirs, d'artisanat, d'épices et de délices égyptiens. Visiter les marchés locaux est une expérience culturelle à ne pas manquer pendant votre voyage.",
-      CONCLUSION_TITLE: "Planifiez votre voyage à Hurghada dès aujourd'hui",
-      CONCLUSION_TEXT: "Hurghada offre une combinaison parfaite d'aventure, de détente et d'expériences culturelles. Des resorts de luxe aux safaris dans le désert, en passant par la plongée et la cuisine locale, chaque voyageur trouvera quelque chose d'inoubliable. Réservez votre voyage à Hurghada avec TopPicksTravels et profitez de vacances de rêve le long de la côte égyptienne de la mer Rouge."
+      FOOD_TEXT: "Hurghada offre une scène culinaire variée avec des fruits de mer frais, des plats égyptiens traditionnels et une cuisine internationale. De nombreux restaurants en bord de mer associent des repas savoureux à une vue imprenable sur la mer Rouge.",
+      SCUBA_TITLE: "Snorkeling & excursions en mer",
+      SCUBA_TEXT: "Profitez d’excursions de snorkeling sur des récifs peu profonds, de visites d’îles et de croisières relaxantes en bateau sur la mer Rouge. Ces sorties sont idéales pour les familles, les débutants et les voyageurs souhaitant explorer la vie marine sans plongée profonde.",
+      QUAD_TITLE: "Aventures en mer & à la plage",
+      QUAD_TEXT: "En plus des excursions en bateau, profitez d’activités balnéaires telles que la baignade, le bronzage, le paddle et la détente en bord de mer. De nombreuses excursions incluent des arrêts sur des îles préservées et des lagons aux eaux turquoise.",
+      OTHER_TITLE: "Autres activités maritimes",
+      ACTIVITY_1: "Excursions vers les îles et snorkeling",
+      ACTIVITY_2: "Balades en bateau à fond de verre",
+      ACTIVITY_3: "Croisières au coucher du soleil",
+      ACTIVITY_4: "Location de yachts privés",
+      ACTIVITY_5: "Journées plage sur les îles de la mer Rouge",
+      BEACHES_TITLE: "Magnifiques plages de Hurghada",
+      BEACHES_TEXT: "Hurghada abrite certaines des plus belles plages de la mer Rouge, notamment Makadi Bay, Sahl Hasheesh et les îles Giftun. Ces plages sont idéales pour la baignade, le snorkeling et la détente au bord de l’eau.",
+      DIVING_TOURS_TITLE: "Excursions vers les îles de la mer Rouge",
+      DIVING_TOURS_TEXT: "Les excursions vers les îles de Hurghada offrent des eaux cristallines, des récifs coralliens vibrants et une ambiance balnéaire relaxante. Ces sorties combinent snorkeling, baignade et temps libre sur certaines des plus belles îles de la mer Rouge.",
+      LOCAL_MARKETS_TITLE: "Découvrir les marchés locaux",
+      LOCAL_MARKETS_TEXT: "Les marchés locaux de Hurghada proposent des souvenirs, de l’artisanat et des vêtements de plage. Les visiter ajoute une touche culturelle à vos vacances balnéaires.",
+      CONCLUSION_TITLE: "Planifiez votre excursion en mer à Hurghada dès aujourd’hui",
+      CONCLUSION_TEXT: "Hurghada est la destination idéale pour les amoureux de la mer, offrant des excursions en bateau inoubliables, des aventures insulaires et des moments de détente à la plage. Réservez votre excursion à Hurghada avec TopPicksTravels et profitez de la beauté de la mer Rouge."
     },
+    
     LUXOR_BLOG: {
-      TITLE: "Louxor Égypte - Explorez les merveilles antiques et les excursions",
-      SUBTITLE: "Découvrez les temples, croisières sur le Nil, musées et expériences culturelles à Louxor avec TopPicksTravels",
-      INTRO_TITLE: "Aperçu de la ville de Louxor",
-      INTRO_TEXT: "Louxor, connue comme le plus grand musée en plein air du monde, est l'une des principales destinations touristiques d'Égypte. Située le long du Nil, Louxor possède des temples antiques, des tombes, des monuments et une riche histoire datant de plusieurs millénaires. Les voyageurs peuvent profiter de visites guidées, explorer des sites archéologiques, ou se détendre au bord du Nil tout en s'imprégnant de la culture égyptienne.",
-      WHERE_TO_STAY_TITLE: "Où séjourner à Louxor",
-      WHERE_TO_STAY_TEXT: "Louxor propose un large éventail d'hôtels et de resorts adaptés à différents budgets, des hôtels de luxe avec vue sur le Nil aux hébergements boutique. Beaucoup proposent des forfaits tout compris, des piscines, des terrasses avec vue sur le Nil et un accès facile aux temples et musées. Les zones populaires incluent la rive ouest, la rive est et le centre-ville, idéales pour le tourisme et la détente.",
-      WHAT_TO_DO_TITLE: "Choses à faire à Louxor",
-      TEMPLE_TITLE: "Visitez les temples",
-      TEMPLE_TEXT: "Explorez des temples mondialement célèbres comme le temple de Karnak, le temple de Louxor et le temple d'Hatchepsout. Ces magnifiques structures antiques présentent l'architecture égyptienne, les hiéroglyphes et le patrimoine culturel datant de plusieurs millénaires.",
-      NILE_CRUISE_TITLE: "Croisières sur le Nil",
-      NILE_CRUISE_TEXT: "Profitez d'une croisière panoramique sur le Nil, avec des vues imprenables sur les temples, les palmeraies et les monuments antiques. Les croisières proposent des options pour des excursions d'une journée, des tours au coucher du soleil et des séjours de nuit luxueux sur des felouques traditionnelles ou des bateaux modernes.",
-      MUSEUM_TITLE: "Musées de Louxor",
-      MUSEUM_TEXT: "Visitez le musée de Louxor et le musée de la momification pour explorer des artefacts, des trésors royaux, des statues et des aperçus de la vie égyptienne antique. Ces musées complètent l'expérience archéologique en plein air.",
-      OTHER_TITLE: "Autres activités",
-      ACTIVITY_1: "Montgolfières au-dessus du Nil",
-      ACTIVITY_2: "Tours en calèche dans la ville",
-      ACTIVITY_3: "Shopping dans les souks et marchés de Louxor",
-      ACTIVITY_4: "Ateliers culturels et spectacles locaux",
-      ACTIVITY_5: "Excursions d'une journée à la Vallée des Rois",
-      CONCLUSION_TITLE: "Planifiez votre voyage à Louxor dès aujourd'hui",
-      CONCLUSION_TEXT: "Louxor offre un mélange parfait d'aventure, d'histoire et de culture. De l'exploration des temples et tombes aux croisières sur le Nil et aux marchés locaux, chaque voyageur trouvera une expérience inoubliable. Réservez votre voyage à Louxor avec TopPicksTravels et immergez-vous dans les merveilles intemporelles de l'Égypte."
-    },
+      TITLE: "Plongée à Hurghada – Explorez le monde sous-marin de la mer Rouge",
+      SUBTITLE: "Découvrez une plongée de classe mondiale, des récifs coralliens et une vie marine exceptionnelle à Hurghada avec TopPicksTravels",
+      INTRO_TITLE: "Aperçu de la plongée à Hurghada",
+      INTRO_TEXT: "Hurghada est reconnue internationalement comme l’une des meilleures destinations de plongée au monde. La mer Rouge offre une visibilité exceptionnelle, des récifs coralliens colorés et une biodiversité marine impressionnante, idéale pour les plongeurs débutants comme expérimentés. Des plongées sur récifs peu profonds aux plongées sur épaves spectaculaires, Hurghada garantit des expériences sous-marines inoubliables.",
+      WHERE_TO_STAY_TITLE: "Où séjourner pour la plongée",
+      WHERE_TO_STAY_TEXT: "De nombreux resorts et hôtels de plongée à Hurghada sont spécialement conçus pour les plongeurs, avec des centres de plongée, la location d’équipement et des sorties quotidiennes en bateau. Les resorts en bord de mer offrent un accès facile aux sites de plongée et à des instructeurs professionnels.",
+      WHAT_TO_DO_TITLE: "Activités de plongée à Hurghada",
+      TEMPLE_TITLE: "Sites de plongée",
+      TEMPLE_TEXT: "Explorez des sites de plongée réputés avec des jardins de corail, des tombants et des épaves. Les sites de plongée de Hurghada conviennent aux débutants, aux plongeurs avancés et aux passionnés de plongée technique.",
+      NILE_CRUISE_TITLE: "Croisières plongée en liveaboard",
+      NILE_CRUISE_TEXT: "Les croisières de plongée en liveaboard permettent d’explorer des sites de plongée éloignés à travers la mer Rouge. Ces voyages de plusieurs jours incluent l’hébergement, les repas et plusieurs plongées par jour.",
+      MUSEUM_TITLE: "Découverte de la vie marine",
+      MUSEUM_TEXT: "Rencontrez des poissons colorés, des tortues, des raies, des dauphins et des formations coralliennes spectaculaires. La biodiversité sous-marine de Hurghada rend chaque plongée unique.",
+      OTHER_TITLE: "Autres expériences de plongée",
+      ACTIVITY_1: "Cours de plongée pour débutants et certifications PADI",
+      ACTIVITY_2: "Plongées sur épaves",
+      ACTIVITY_3: "Plongée de nuit",
+      ACTIVITY_4: "Plongée avancée et technique",
+      ACTIVITY_5: "Excursions de photographie sous-marine",
+      CONCLUSION_TITLE: "Planifiez votre voyage de plongée dès aujourd’hui",
+      CONCLUSION_TEXT: "Hurghada offre des expériences de plongée incomparables avec des eaux cristallines et des récifs coralliens mondialement célèbres. Réservez votre voyage de plongée avec TopPicksTravels et découvrez la magie du monde sous-marin de la mer Rouge."
+    }
+    ,
     ABOUT_: {
       TITLE: "Qui sommes-nous",
       DESCRIPTION_1: "SharkWorldsTravels est une entreprise de tourisme professionnelle dédiée à créer des expériences de voyage inoubliables à travers l'Égypte. Des visites culturelles et safaris dans le désert aux aventures en mer et excursions citadines, nous aidons les voyageurs à explorer l'Égypte avec confort, sécurité et authenticité.",
@@ -200,5 +206,26 @@ export const FR = {
     Service2Link: "Explorer les sorties",
     Service3Title: "Aventures dans le désert",
     Service3Description: "Vivez la beauté du désert égyptien avec des safaris et aventures de camping inoubliables.",
-    Service3Link: "Découvrir plus"
+    Service3Link: "Découvrir plus",
+
+ 
+    
+    STATS: {
+      HAPPY_TRAVELERS: 'Voyageurs satisfaits',
+      UNIQUE_TOURS: 'Circuits uniques',
+      CUSTOMER_RATING: 'Note des clients',
+      DESTINATIONS: 'Destinations'
+    },
+    
+    FEATURES: {
+      EXPERIENCE_TITLE: 'Expériences uniques',
+      EXPERIENCE_DESC: 'Des aventures soigneusement conçues alliant nature, culture et émotions.',
+    
+      SUPPORT_TITLE: 'Support 24/7',
+      SUPPORT_DESC: 'Notre équipe est toujours disponible pour garantir un voyage fluide et sans souci.',
+    
+      SAFETY_TITLE: 'Sûr & Fiable',
+      SAFETY_DESC: 'Partenaires de confiance, guides professionnels et normes de sécurité élevées.'
+    }
+    
   };

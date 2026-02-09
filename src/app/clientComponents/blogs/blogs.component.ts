@@ -16,7 +16,7 @@ export class BlogsComponent {
     {
       titleKey: 'BLOGS.HURGHADA.TITLE',
       excerptKey: 'BLOGS.HURGHADA.EXCERPT',
-      image: 'assets/images/diving9.jpg',
+      image: 'assets/images/diving7.jpg',
       date: 'July 2025',
       categoryKey: 'BLOGS.CATEGORY.TRAVEL_TIPS',
       slug: 'hurghadaBlog'
@@ -25,7 +25,7 @@ export class BlogsComponent {
     {
       titleKey: 'BLOGS.LUXOR.TITLE',
       excerptKey: 'BLOGS.LUXOR.EXCERPT',
-      image: 'assets/images/diving7.jpg',
+      image: 'assets/images/diving9.jpg',
       date: 'July 2025',
       categoryKey: 'BLOGS.CATEGORY.HISTORY',
       slug: 'luxorBlog'
