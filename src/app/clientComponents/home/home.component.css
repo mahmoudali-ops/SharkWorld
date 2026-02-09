@@ -3104,3 +3104,51 @@ swiper-slide * {
     font-size: 1rem;
   }
 }
+/* =========================
+   HERO CAPTION DYNAMIC ANIMATION
+========================= */
+.hero-caption {
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+  color: #fff;
+}
+
+/* الحركة الأساسية للعنصر كله (floating) */
+.hero-caption h1,
+.hero-caption p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpMove 1s ease-out forwards, float 4s ease-in-out infinite alternate;
+}
+
+.hero-caption h1 {
+  animation-delay: 0.3s, 1s; /* يظهر بعد 0.3 ثانية + float يبدأ بعد ثانية */
+  font-size: 3rem;
+}
+
+.hero-caption p {
+  animation-delay: 0.6s, 1s;
+  font-size: 1.2rem;
+}
+
+/* Keyframes للظهور + رفع */
+@keyframes fadeUpMove {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes للحركة الديناميكية (floating) */
+@keyframes float {
+  0% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-5px) translateX(2px); }
+  50% { transform: translateY(-10px) translateX(-2px); }
+  75% { transform: translateY(-5px) translateX(1px); }
+  100% { transform: translateY(0) translateX(0); }
+}
