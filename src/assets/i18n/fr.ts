@@ -226,6 +226,30 @@ export const FR = {
     
       SAFETY_TITLE: 'Sûr & Fiable',
       SAFETY_DESC: 'Partenaires de confiance, guides professionnels et normes de sécurité élevées.'
+    },
+    DESTINATIONS: {
+      TITLE: "Les circuits les plus populaires à Hurghada",
+      SUBTITLE: "Découvrez les plus beaux endroits que vous pouvez visiter avec TourSite"
+    },
+    EXPERIENCE: {
+      BADGE: "L’expérience SharkWorlds",
+      TITLE_LINE_1: "Les sourires de nos voyageurs",
+      TITLE_LINE_2: "témoignent de leur satisfaction",
+      DESCRIPTION: "Chez SharkWorlds, chaque voyage est conçu pour ravir nos clients. Nos voyageurs apprécient notre service attentionné, nos aventures inoubliables et le soin apporté à chaque détail pour rendre leur séjour parfait.",
+      FEATURES: {
+        SERVICE: "Service exceptionnel & guides sympathiques",
+        DESTINATIONS: "Destinations soigneusement sélectionnées",
+        SATISFACTION: "Grande satisfaction client",
+        TRUSTED: "Approuvé par des voyageurs du monde entier"
+      },
+      BUTTON: "Découvrir nos services"
+    },
+    CATEGORIES: {
+      SEA_TRIPS: "Excursions en mer",
+      DIVING: "Plongée"
     }
+    
+    
+    
     
   };

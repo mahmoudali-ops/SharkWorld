@@ -239,7 +239,30 @@ export const EN = {
   
     SAFETY_TITLE: 'Safe & Reliable',
     SAFETY_DESC: 'Trusted partners, professional guides, and top safety standards.'
+  },
+  DESTINATIONS: {
+    TITLE: "Hurghada Most Popular Tours",
+    SUBTITLE: "Discover the most beautiful places you can visit with TourSite"
+  },
+  EXPERIENCE: {
+    BADGE: "SharkWorlds Experience",
+    TITLE_LINE_1: "Our Travelers' Smiles",
+    TITLE_LINE_2: "Show Their Satisfaction",
+    DESCRIPTION: "At SharkWorlds, every journey is crafted to delight our guests. Travelers love our attentive service, unforgettable adventures, and the care we put into every detail to make their trip perfect.",
+    FEATURES: {
+      SERVICE: "Exceptional service & friendly guides",
+      DESTINATIONS: "Beautiful curated destinations",
+      SATISFACTION: "High customer satisfaction",
+      TRUSTED: "Trusted by travelers worldwide"
+    },
+    BUTTON: "Discover Our Services"
+  },
+  CATEGORIES: {
+    SEA_TRIPS: "Sea Trips",
+    DIVING: "Diving"
   }
+  
+  
   
   
   

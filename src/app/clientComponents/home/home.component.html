@@ -386,8 +386,14 @@
   <section class="destinations-section-new py-5">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="destinations-title">Hurghada Most Popular Tours</h2>
-        <p class="destinations-subtitle">Discover the most beautiful places you can visit with TourSite</p>
+        <h2 class="destinations-title">
+          {{ 'DESTINATIONS.TITLE' | t }}
+        </h2>
+        
+        <p class="destinations-subtitle">
+          {{ 'DESTINATIONS.SUBTITLE' | t }}
+        </p>
+        
         
       </div>
   
@@ -481,39 +487,40 @@
         <!-- Content -->
         <div class="col-lg-6">
           <div class="experience-content reveal-right">
-            <span class="experience-badge"><strong>SharkWorlds Experience</strong></span>
+            <span class="experience-badge">
+              <strong>{{ 'EXPERIENCE.BADGE' | t }}</strong>
+            </span>
+        
             <h2 class="experience-title">
-              Our Travelers' Smiles <br>
-              Show Their Satisfaction
+              {{ 'EXPERIENCE.TITLE_LINE_1' | t }} <br>
+              {{ 'EXPERIENCE.TITLE_LINE_2' | t }}
             </h2>
+        
             <p class="experience-desc">
-              At <strong>SharkWorlds</strong>, every journey is crafted to delight our guests. 
-              Travelers love our attentive service, unforgettable adventures, 
-              and the care we put into every detail to make their trip perfect.
+              {{ 'EXPERIENCE.DESCRIPTION' | t }}
             </p>
-            
-  
+        
             <ul class="experience-list">
               <li>
-                <i class="fas fa-star"></i> Exceptional service & friendly guides
+                <i class="fas fa-star"></i> {{ 'EXPERIENCE.FEATURES.SERVICE' | t }}
               </li>
               <li>
-                <i class="fas fa-water"></i> Beautiful curated destinations
+                <i class="fas fa-water"></i> {{ 'EXPERIENCE.FEATURES.DESTINATIONS' | t }}
               </li>
               <li>
-                <i class="fas fa-smile-beam"></i> High customer satisfaction
+                <i class="fas fa-smile-beam"></i> {{ 'EXPERIENCE.FEATURES.SATISFACTION' | t }}
               </li>
               <li>
-                <i class="fas fa-globe-americas"></i> Trusted by travelers worldwide
+                <i class="fas fa-globe-americas"></i> {{ 'EXPERIENCE.FEATURES.TRUSTED' | t }}
               </li>
             </ul>
-  
+        
             <a href="/about-us" class="experience-btn">
-              Discover Our Services <i class="fas fa-arrow-right"></i>
+              {{ 'EXPERIENCE.BUTTON' | t }} <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
-  
+        
       </div>
     </div>
   </section>

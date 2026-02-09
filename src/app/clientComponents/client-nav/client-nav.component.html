@@ -11,8 +11,18 @@
       <!-- القائمة في الوسط -->
       <ul class="nav-links">
         <li><a routerLink="/"routerLinkActive="active-link">{{ 'NAV.HOME' | t }}</a></li>
-        <li><a [routerLink]="['/categrytourDetail', 'sea-tours-hurghada']">Sea Trips</a></li>
-        <li><a [routerLink]="['/categrytourDetail', 'diving']">Diving</a></li>   
+        <li>
+          <a [routerLink]="['/categrytourDetail', 'sea-tours-hurghada']">
+            {{ 'CATEGORIES.SEA_TRIPS' | t }}
+          </a>
+        </li>
+        
+        <li>
+          <a [routerLink]="['/categrytourDetail', 'diving']">
+            {{ 'CATEGORIES.DIVING' | t }}
+          </a>
+        </li>
+           
         <li><a routerLink="/blogs"routerLinkActive="active-link">{{ 'NAV.BLOGS' | t }}</a></li>
         <li><a routerLink="/reviews"routerLinkActive="active-link">{{ 'NAV.REVIEWS' | t }}</a></li>
         <li><a routerLink="/about"routerLinkActive="active-link">{{ 'NAV.ABOUT' | t }}</a></li>
