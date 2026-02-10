@@ -109,7 +109,6 @@ export class UpdateTourComponent implements OnInit {
       translations: this.fb.group({
         en: this.createTranslationGroup(),
         de: this.createTranslationGroup(),
-
         fr: this.createTranslationGroup(),
       }),
 
