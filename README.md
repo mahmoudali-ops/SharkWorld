@@ -1,61 +1,66 @@
-🌍 TopPicks Travels – Tourism Management Platform
+🌊 SharkWorlds – Tourism & Experience Platform
 
-TopPicks Travels is a production-ready tourism platform designed to manage tours, transfers, destinations, bookings, and multilingual content with a strong focus on scalability, security, performance, and SEO.
+SharkWorlds is a live, production-ready tourism and experiences platform built to manage tours, bookings, multilingual content, and SEO optimization with a strong focus on performance, scalability, and security.
 
 🚀 Live Website:
-👉 https://toppickstravels.com
+👉 https://www.sharkworlds.de/
 
 📌 Project Overview
 
-The platform is divided into two fully integrated systems:
+The system is structured into two fully connected environments:
 
-🧳 Client Website
+🌐 Client Website
 
-Browse tours & transfers
+Browse tours & experiences
 
-SEO-friendly pages with slug-based URLs
+SEO-friendly slug-based routing
 
-Multi-language content
+Multi-language support
 
 Booking requests with email notifications
 
-Fully responsive design (mobile, tablet, desktop)
+Fully responsive UI (mobile, tablet, desktop)
+
+Optimized performance with SSR
 
 🛠️ Admin Dashboard
 
-Full content management (Tours, Destinations, Transfers, Categories)
+Full management of tours & categories
 
-Multi-language management (dynamic, no hardcoded text)
+Dynamic multi-language content control
 
-Image & media galleries
+Image & media management
 
-SEO control per page (Meta Title, Meta Description, Meta Keywords)
+SEO metadata control (Meta Title, Description, Keywords)
 
-Booking management
+Booking management panel
 
-Role-based protected access
+Role-based secured access
+
+All content is fully dynamic and managed without hardcoded text.
 
 🧱 System Architecture
-Backend
+🔹 Backend Architecture
 
-Clean / Layered Architecture
-(API → Service → Repository → Core)
+Clean Layered Architecture (API → Application → Domain → Infrastructure)
 
 Repository + Unit of Work + Specification Pattern
 
-DTO-based API design
+DTO-based RESTful API design
 
 Dependency Injection & SOLID principles
 
-Frontend
+Centralized exception handling & logging
 
-Standalone-first Angular architecture
+🔹 Frontend Architecture
 
-Feature-based structure (Client / Admin)
+Standalone Angular architecture
+
+Feature-based module separation (Client / Admin)
 
 Lazy-loaded routes & components
 
-SSR with full client hydration
+Server-Side Rendering (SSR) with client hydration
 
 🛠️ Tech Stack
 Backend
@@ -74,7 +79,7 @@ JWT Authentication (HttpOnly Cookies)
 
 ASP.NET Core Identity
 
-Swagger (API Documentation)
+Swagger
 
 Frontend
 
@@ -84,7 +89,7 @@ TypeScript
 
 Angular Signals
 
-Angular SSR (@angular/ssr)
+Angular SSR
 
 Bootstrap 5
 
@@ -92,15 +97,15 @@ RxJS
 
 Reactive Forms
 
-DevOps & Tools
+DevOps & Integrations
 
 Git & GitHub
 
-Netlify (Frontend Deployment)
-
-Production HTTPS domain
+Production HTTPS Deployment
 
 SMTP Email Integration
+
+Image optimization (WebP, compression)
 
 🔐 Authentication & Security
 
@@ -116,13 +121,14 @@ Secure CORS configuration
 
 HTTPS-only communication
 
-🌐 Internationalization (i18n)
+🌍 Internationalization (i18n)
 
-Fully dynamic multi-language system
+Fully dynamic multilingual system.
+
 Supported languages:
-🇬🇧 English | 🇩🇪 German | 🇳🇱 Dutch
+🇬🇧 English | 🇩🇪 German
 
-Language handled on both backend & frontend
+Language handling on backend & frontend
 
 Admin-controlled translations
 
@@ -137,19 +143,17 @@ Server-side pagination
 
 Optimized EF Core queries
 
-Async/Await across all I/O operations
-
-Image optimization (WebP, resizing, compression)
+Async/Await across I/O operations
 
 Frontend
 
 Server-Side Rendering (SSR)
 
-Lazy loading for routes & components
+Lazy loading
 
 Client hydration
 
-Optimized builds for SEO & Lighthouse scores
+SEO & Lighthouse optimized builds
 
 📈 SEO Features
 
@@ -161,7 +165,7 @@ Open Graph tags
 
 Sitemap.xml
 
-SEO-friendly slug-based routing
+SEO-friendly slug routing
 
 Admin-controlled SEO metadata
 
@@ -169,15 +173,11 @@ Admin-controlled SEO metadata
 
 Booking requests linked to tours
 
-SMTP email notifications to admin
+SMTP email notifications
 
 Booking data stored in database
 
-Admin management dashboard for bookings
-
-📂 Frontend Repository
-
-👉 https://github.com/mahmoudali-ops/TourSitaTopPicks
+Admin management panel
 
 🧑‍💻 Author
 
@@ -186,8 +186,8 @@ Full Stack .NET & Angular Developer
 
 ⭐ Notes
 
-This is a real production project, not a demo.
+This is a real production deployment.
 
-Actively deployed and running with real users.
+Actively running on a live domain.
 
-Built with enterprise-level patterns and best practices.
+Built using enterprise-level patterns and best practices.
