@@ -30,7 +30,7 @@ export class TokComponent  implements AfterViewInit {
 
     const s1 = document.createElement('script');
     s1.async = true;
-    s1.src = 'https://embed.tawk.to/69488d04420bc819787eff99/1jd1mdmlf';
+    s1.src = 'https://embed.tawk.to/699e030d01c6a21c34512395/1ji8jnr2k';
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     document.body.appendChild(s1);
@@ -47,3 +47,4 @@ export class TokComponent  implements AfterViewInit {
     };
   }
 }
+
