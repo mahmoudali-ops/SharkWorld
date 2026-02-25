@@ -33,7 +33,8 @@ export class AboutComponent extends ReloadableComponent {
       this.LoadDataSeo();
       }
       LoadDataSeo() {
-        // 🔹 تنظيف أي meta قديم
+
+        // 🔹 Remove old meta tags
         this.meta.removeTag("name='description'");
         this.meta.removeTag("name='keywords'");
         this.meta.removeTag("property='og:title'");
@@ -47,60 +48,79 @@ export class AboutComponent extends ReloadableComponent {
         this.meta.removeTag("name='twitter:image'");
         this.meta.removeTag("rel='canonical'");
       
-        // 🔹 Title (Brand + About)
+        // 🔹 Title
         this.title.setTitle(
-          'About Us | BBESocial - Customer Service Experts for E-commerce Brands'
+          'About Us | SharkWorlds - Diving & Travel Experiences in the Red Sea'
         );
       
-        // 🔹 Meta Description (SEO + Conversion)
+        // 🔹 Meta Description
         this.meta.updateTag({
           name: 'description',
           content:
-            'Learn about BBESocial, a professional customer service agency dedicated to helping e-commerce brands deliver exceptional support experiences. Meet our experienced team and discover our mission to elevate customer satisfaction.'
+            'Learn about SharkWorlds, a passionate diving and travel company based in the Red Sea. We create unforgettable adventures, crystal-clear diving experiences, and exceptional travel memories.'
         });
       
-        // 🔹 Keywords (Relevant & Clean)
+        // 🔹 Keywords
         this.meta.updateTag({
           name: 'keywords',
           content:
-            'BBESocial, about us, customer service agency, e-commerce support, customer support team, professional service, experienced team'
+            'SharkWorlds, about us, Red Sea diving, scuba diving Egypt, diving trips, snorkeling tours, travel experiences, Hurghada diving'
         });
       
-        // 🔹 Open Graph (Social Sharing + Branding)
+        // 🔹 Open Graph
         this.meta.updateTag({
           property: 'og:title',
-          content: 'About BBESocial | Customer Service Experts for E-commerce Brands'
+          content: 'About SharkWorlds | Red Sea Diving & Travel Adventures'
         });
+      
         this.meta.updateTag({
           property: 'og:description',
           content:
-            'Discover BBESocial and our mission to provide top-notch customer support solutions for e-commerce brands. Learn about our team and expertise.'
+            'Discover SharkWorlds and our mission to provide exceptional diving and travel adventures in the Red Sea. Meet our passionate team and explore unforgettable journeys.'
         });
-        this.meta.updateTag({ property: 'og:type', content: 'website' });
-        this.meta.updateTag({ property: 'og:url', content: 'https://bbesocial.com/about' });
+      
+        this.meta.updateTag({
+          property: 'og:type',
+          content: 'website'
+        });
+      
+        this.meta.updateTag({
+          property: 'og:url',
+          content: 'https://www.sharkworlds.de/about'
+        });
+      
         this.meta.updateTag({
           property: 'og:image',
-          content: 'https://bbesocial.com/assets/images/bbesocaiallogo.png'
+          content: 'https://www.sharkworlds.de/assets/images/logo.png'
         });
       
         // 🔹 Twitter Card
-        this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+        this.meta.updateTag({
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        });
+      
         this.meta.updateTag({
           name: 'twitter:title',
-          content: 'About BBESocial | Customer Service Experts for E-commerce Brands'
+          content: 'About SharkWorlds | Red Sea Diving & Travel Adventures'
         });
+      
         this.meta.updateTag({
           name: 'twitter:description',
           content:
-            'Discover BBESocial and our mission to provide top-notch customer support solutions for e-commerce brands. Learn about our team and expertise.'
-        });
-        this.meta.updateTag({
-          name: 'twitter:image',
-          content: 'https://bbesocial.com/assets/images/bbesocaiallogo.png'
+            'Explore SharkWorlds – your trusted partner for diving trips, snorkeling tours, and unforgettable Red Sea adventures.'
         });
       
-        // 🔹 Canonical URL
-        this.meta.updateTag({ rel: 'canonical', href: 'https://bbesocial.com/about' });
+        this.meta.updateTag({
+          name: 'twitter:image',
+          content: 'https://www.sharkworlds.de/assets/images/logo.png'
+        });
+      
+        // 🔹 Canonical
+        this.meta.updateTag({
+          rel: 'canonical',
+          href: 'https://www.sharkworlds.de/about'
+        });
       }
       
     // ========================
