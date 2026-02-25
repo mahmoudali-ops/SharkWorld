@@ -78,6 +78,9 @@ export const routes: Routes = [
   
         { path: 'transferCreate', loadComponent: () => import('./adminCompoents/create-transfer/create-transfer.component').then(m => m.CreateTransferComponent), canActivate: [authGuardGuard], title: 'Admin Create a Transfer' },
         { path: 'transferUpdate/:id', loadComponent: () => import('./adminCompoents/update-transfer/update-transfer.component').then(m => m.UpdateTransferComponent), canActivate: [authGuardGuard], title: 'Admin Update a Transfer' },
+
+        { path: 'about-update', loadComponent: () => import('./adminCompoents/about-update/about-update.component').then(m => m.UpdateAboutComponent), canActivate: [authGuardGuard], title: 'About-update' },
+
   
         { path: '', redirectTo: 'tours', pathMatch: 'full' },
         { path: '**', redirectTo: 'tours' },

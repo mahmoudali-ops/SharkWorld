@@ -1,23 +1,20 @@
-<div class="about-container">
+<div class="about-container"*ngIf="aboutdataData() as about">
 
   <!-- ================= HERO ================= -->
   <section class="about-hero">
-    <img src="../../../assets/images/diving6.jpg" loading="lazy" alt="About Us Image">
+    <img [src]="about.imageCover"  loading="lazy" alt="About Us Image">
   </section>
 
   <!-- ================= ABOUT CONTENT ================= -->
 <!-- ================= ABOUT CONTENT ================= -->
-<section class="about-content">
-  <h2 class="section-title">{{ 'ABOUT.TITLE' | t }}</h2>
+<section class="about-content" >
+  <h2 class="section-title">{{ about.aboutTranslationDtos[0].title }}</h2>
 
   <p class="about-text">
     <strong>SharkWorlds</strong>
-    {{ 'ABOUT.TEXT_1' | t }}
+    {{ about.aboutTranslationDtos[0].description }}
   </p>
 
-  <p class="about-text">
-    {{ 'ABOUT.TEXT_2' | t }}
-  </p>
 </section>
 
 <!-- ================= STATS ================= -->
