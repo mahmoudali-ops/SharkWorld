@@ -171,7 +171,7 @@ Admin-controlled SEO metadata
 
 ✉️ Booking & Email System
 
-Booking requests linked to  tours
+Booking requests linked to   tours
 
 SMTP email notifications
 
